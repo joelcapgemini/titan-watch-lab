@@ -4,26 +4,12 @@
 
 ## The kaiju, in thirty seconds
 
-- **Vespyra.** Airborne. 98 m long. Flies at 62 km/h, faster into storms.
-- **Heading for Bellevue.** Crosses the Sea-Tac approach corridor on the way. Does not change course for aircraft. Does not stop.
-- **19 minutes** until it crosses the outer marker for runways 16L, 16C, 16R. That number is a straight-line estimate from Titan Watch, refreshed every 30 seconds. It usually runs early.
+- **Vespyra.** Airborne, 98 m, 62 km/h, faster into storms. Heading for Bellevue through the Sea-Tac approach corridor. Does not turn for aircraft. Does not stop. Cannot be stopped.
+- **19 minutes** until it crosses the outer marker for runways 16L, 16C, 16R. Straight-line estimate from Titan Watch, refreshed every 30 seconds. Usually runs early.
 - **Anything within 2 km of its track is lost.** Wake and debris, not intent.
-- **Nobody can stop it.** No weapons, no interception in this scenario.
+- **Who sees it.** Titan Watch sees where it is, every 30 seconds. Radar sees a blip. Pilots see it inside 15 km in daylight. Nobody sees what it does next. That gap is the scenario.
 
-## Who sees what
-
-| Source | Sees | Does not see | How often |
-|--------|------|--------------|-----------|
-| Titan Watch sensor grid | Position, heading, speed | Intent, weather response | Every 30 s |
-| ATC primary radar | A large erratic blip | What it is, its altitude | Continuous |
-| Pilots | Visual inside 15 km in daylight | Anything in cloud | On report |
-| Public weather feed | Storm fronts | Vespyra | Every 10 min |
-
-No single source sees both where it is and what it is about to do. That gap is the scenario.
-
-## The hard choice
-
-Land everything onto runways in its path, or divert forty aircraft with fuel some of them do not have.
+Forty aircraft are inside approach airspace. Land them onto runways in its path, or divert them with fuel some do not have.
 
 ## Pick your outcome, two minutes, whole team
 
@@ -35,9 +21,7 @@ One outcome for the whole team. Every interview is done with it in mind. Pick on
 | Pragmatic | Every aircraft on the ground somewhere before the outer marker. Wrong airport or off-field counts | You will be matching fuel to fields against the clock |
 | Grim | You cannot save all forty. Decide which you lose, and make it a recorded decision, not an accident | You will be asking who owns the choice. Feeds straight into the Responsible AI lab |
 
-Lead writes the chosen outcome into `.copilot-tracking/dt/seatac-ground-stop/scope-boundaries.md` under "Outcome", commits, pushes to `team/<cohort>`. Everyone pulls before starting their interview.
-
-An outcome that is really a solution ("build a divert dashboard") gets sent back. An outcome with no software in it ("pilots get a phone call") makes the coach solve it with a procedure and stop.
+Lead writes it into `.copilot-tracking/dt/seatac-ground-stop/scope-boundaries.md` under "Outcome", commits, pushes to `team/<cohort>`. Everyone pulls before their interview. A solution in disguise ("build a divert dashboard") gets sent back. No software in it ("pilots get a phone call") and the coach solves it on paper and stops.
 
 ## Cards and duties
 
@@ -50,10 +34,4 @@ An outcome that is really a solution ("build a divert dashboard") gets sent back
 
 Three people: card 1 takes card 4's duty. Two people: cards 1 and 2. Unassigned cards have a ready interview in `lab/scenarios/seatac/fallback/`.
 
-## Already done for you
-
-Under `.copilot-tracking/dt/seatac-ground-stop/`: scope, stakeholder map, assumptions log, world rules, three finished interviews (FAA tower, airport fire chief, Titan Watch analyst), and the security scoping answers. Do not redo any of it. The coach reads it.
-
-## Out of scope for everyone
-
-Engaging Vespyra. Terminal evacuation. Anything after it has passed.
+**Already done, do not redo:** scope, stakeholder map, assumptions, world rules, three interviews, security scoping answers, all under `.copilot-tracking/dt/seatac-ground-stop/`. **Out of scope for everyone:** engaging Vespyra, terminal evacuation, anything after it passes.
