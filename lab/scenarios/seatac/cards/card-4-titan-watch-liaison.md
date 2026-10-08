@@ -1,8 +1,8 @@
 # Card 4: Titan Watch liaison at Sea-Tac
 
-**Scenario 3: forty aircraft on approach.** Vespyra crosses the Sea-Tac approach corridor in 19 minutes. Monster facts: `world-rules.md`, fixed. Human facts: yours, invent and label.
+**Scenario 3, Sea-Tac.** Kaiju facts are on page 1 of this pack. Human facts are yours: invent and label.
 
-**Your duty on this card:** reviewer. You read every file as it lands and write down one gap the coach found that nobody said. In section 3 you read the plan first.
+**Your duty on this card:** reviewer. Read files as they land, record gaps. In section 3 you read the plan aloud.
 
 **Outcome you are judged on:** every aircraft on the ground somewhere before Vespyra crosses the outer marker.
 

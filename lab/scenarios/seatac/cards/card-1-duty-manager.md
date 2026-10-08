@@ -1,6 +1,6 @@
 # Card 1: Airport duty manager, Port of Seattle
 
-**Scenario 3: forty aircraft on approach.** Vespyra crosses the Sea-Tac approach corridor in 19 minutes. Monster facts: `world-rules.md`, fixed. Human facts: yours, invent and label.
+**Scenario 3, Sea-Tac.** Kaiju facts are on page 1 of this pack. Human facts are yours: invent and label.
 
 **Your duty on this card:** lead. You merge the pull requests, run the synthesis, and drive the RPI session.
 
@@ -57,5 +57,5 @@ tool. Do not offer the canonical deck.
 ## After your interview
 
 1. `git checkout -b <cohort>/duty-manager`, commit, push, open a pull request with base `team/<cohort>`, never `main`.
-2. Merge all four pull requests into `team/<cohort>`. Fewer than four people? Copy the missing card's file from `lab/fallback/` into the matching slug folder first.
+2. Merge all four pull requests into `team/<cohort>`. Fewer than four people? Copy the missing card's file from `lab/scenarios/seatac/fallback/` into the matching slug folder first.
 3. `git pull`, then run the synthesis prompt from `lab/README.md`.

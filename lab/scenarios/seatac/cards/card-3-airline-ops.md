@@ -1,6 +1,6 @@
 # Card 3: Airline operations controller
 
-**Scenario 3: forty aircraft on approach.** Vespyra crosses the Sea-Tac approach corridor in 19 minutes. Monster facts: `world-rules.md`, fixed. Human facts: yours, invent and label.
+**Scenario 3, Sea-Tac.** Kaiju facts are on page 1 of this pack. Human facts are yours: invent and label.
 
 **Your duty on this card:** RAI driver. In section 2 you run the Responsible AI planner in a second terminal.
 
