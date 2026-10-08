@@ -8,13 +8,9 @@ Vespyra will cross the Sea-Tac approach corridor in 19 minutes. Forty aircraft a
 
 ## Outcome
 
-TEAM FILLS THIS IN before interviews start. Pick one tier from the scenario pack, or write your own. The coach interviews every role against this line.
+Starting outcome, fixed for every scenario: Save as much human life as possible, then prevent as much public property damage as possible, in that order. A software tool is expected to come out of this.
 
-- Heroic: all forty on the ground, nobody hurt, no runway lost.
-- Pragmatic: every aircraft on the ground somewhere before the outer marker; wrong airport or off-field counts.
-- Grim: you cannot save all forty; decide which you lose, and make it a recorded decision, not an accident.
-
-Chosen outcome: _(lead writes it here, one sentence)_
+Restated outcome, after synthesis: _(coach writes it here; the line above stays)_
 
 ## In scope
 

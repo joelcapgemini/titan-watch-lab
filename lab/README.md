@@ -38,9 +38,7 @@ On the day, before typing:
 
 # Section 1: Discovery
 
-**Goal.** One outcome for the team. One role-play interview per person against it, merged into one folder. Then one synthesis that produces a PRD, a technology-neutral diagram and an Azure overlay.
-
-**Team, first two minutes.** Page 1 of your pack offers three outcomes: heroic, pragmatic, grim. Pick one, or write your own if it still implies software. An outcome that is really a solution gets sent back. Lead writes it into `.copilot-tracking/dt/<slug>/scope-boundaries.md` under "Outcome", commits, pushes to `team/<cohort>`. Everyone pulls.
+**Goal.** One role-play interview per person against the fixed outcome on page 1 of your pack, merged into one folder. Then one synthesis that produces a PRD, a technology-neutral diagram and an Azure overlay.
 
 **Everyone.** `/clear`, then `/hve-core:dt-coach`, then paste the prompt on your card. The coach reads the shared scope and asks five questions. Answer from inside your card's "can see" window and "your scope". Outside them, say "I do not know" or "that is not my call, ask X". For fictional detail, "assume and label it". When the coach writes your interview file, read it once.
 
@@ -50,7 +48,8 @@ Then: `git checkout -b <cohort>/<your-role>`, commit, push, open a pull request 
 
 ```
 Project <slug>. Read the shared scope under .copilot-tracking/dt/<slug>/ and
-every interview under .copilot-tracking/dt/<slug>*/. Summarise the problem as
+every interview under .copilot-tracking/dt/<slug>*/. Restate the outcome in
+light of the interviews, keeping the original beside it. Summarise the problem as
 if hearing it for the first time. List what you still need before a PRD. Then
 draft the PRD with non-functional requirements, close gaps with labelled
 assumptions, and state what it rests on. Then a technology-neutral diagram as

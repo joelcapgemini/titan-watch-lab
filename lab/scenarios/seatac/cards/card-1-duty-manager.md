@@ -4,7 +4,7 @@
 
 **Your duty on this card:** lead. You merge the pull requests, run the synthesis, and drive the RPI session.
 
-**Outcome you are judged on:** the one your team chose on page 1. It is in `scope-boundaries.md`. Pull before you start.
+**Outcome:** save as much human life as possible, then prevent as much public property damage as possible, in that order. The coach narrows it; that is fine.
 
 **Slug:** `seatac-ground-stop-duty-manager`
 

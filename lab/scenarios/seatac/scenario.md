@@ -11,17 +11,11 @@
 
 Forty aircraft are inside approach airspace. Land them onto runways in its path, or divert them with fuel some do not have.
 
-## Pick your outcome, two minutes, whole team
+## Outcome, same for every scenario and every role
 
-One outcome for the whole team. Every interview is done with it in mind. Pick one, or write your own if it still implies software.
+Save as much human life as possible, then prevent as much public property damage as possible, in that order. A software tool is expected to come out of this.
 
-| Tier | Outcome | What it does to the interviews |
-|------|---------|-------------------------------|
-| Heroic | All forty on the ground, nobody hurt, no runway lost | You will be hunting for capacity nobody has today |
-| Pragmatic | Every aircraft on the ground somewhere before the outer marker. Wrong airport or off-field counts | You will be matching fuel to fields against the clock |
-| Grim | You cannot save all forty. Decide which you lose, and make it a recorded decision, not an accident | You will be asking who owns the choice. Feeds straight into the Responsible AI lab |
-
-Lead writes it into `.copilot-tracking/dt/seatac-ground-stop/scope-boundaries.md` under "Outcome", commits, pushes to `team/<cohort>`. Everyone pulls before their interview. A solution in disguise ("build a divert dashboard") gets sent back. No software in it ("pilots get a phone call") and the coach solves it on paper and stops.
+The coach interviews every role against this, narrows it to this clock and this landmark, and restates it after synthesis. The original stays in the scope file beside the restatement.
 
 ## Cards and duties
 
