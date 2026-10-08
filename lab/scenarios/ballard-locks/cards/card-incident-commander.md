@@ -43,17 +43,6 @@ Out of scope:
 
 "I do not know." - "Assume and label it." - "Ask the specialist, then tell me."
 
-## Your prompt
+## Next
 
-`/clear`, `/hve-core:dt-coach`, paste. Afterwards: commit locally, no push, then the synthesis prompt from the shared instructions.
-
-```
-Resume project ballard-locks-alert. Scope is done under
-.copilot-tracking/dt/ballard-locks-alert/; read it, including every interview
-there, do not redo it. I play the incident commander with full authority: the
-specialists report to me and act on my orders. I see only what they report.
-There is no clock; do not give me one. Interview me as that role, five
-questions, using what the specialists said. Write
-interview-commander-roleplay.md under slug ballard-locks-alert-commander.
-Label everything role-play. Expect a software tool. No canonical deck.
-```
+Turn the page. The run sheet has every command and prompt for this scenario, in order.

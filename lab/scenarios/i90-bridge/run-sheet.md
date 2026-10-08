@@ -1,4 +1,4 @@
-# How to proceed: Sea-Tac
+# How to proceed: I-90 bridge
 
 Order of work, with every prompt filled in for this scenario. Full detail is in the shared instructions.
 
@@ -7,13 +7,13 @@ Order of work, with every prompt filled in for this scenario. Full detail is in 
 1. `/clear`, then `/hve-core:dt-coach`. Paste:
 
 ```
-Resume project seatac-ground-stop. Scope is done under
-.copilot-tracking/dt/seatac-ground-stop/; read it, including every interview
+Resume project i90-span-clear. Scope is done under
+.copilot-tracking/dt/i90-span-clear/; read it, including every interview
 there, do not redo it. I play the incident commander with full authority: the
 specialists in those interviews report to me and carry out my orders. I see
 only what they report. Interview me as that role, five questions, using what
 the specialists said. Then write interview-commander-roleplay.md under slug
-seatac-ground-stop-commander. Label everything role-play. Expect a software
+i90-span-clear-commander. Label everything role-play. Expect a software
 tool. Do not offer the canonical deck.
 ```
 
@@ -21,20 +21,20 @@ tool. Do not offer the canonical deck.
 3. Same session, paste:
 
 ```
-Project seatac-ground-stop. Read the shared scope under
-.copilot-tracking/dt/seatac-ground-stop/, every interview there, and my
-interview under .copilot-tracking/dt/seatac-ground-stop-commander/. Restate the
+Project i90-span-clear. Read the shared scope under
+.copilot-tracking/dt/i90-span-clear/, every interview there, and my
+interview under .copilot-tracking/dt/i90-span-clear-commander/. Restate the
 outcome in light of the interviews, keeping the original beside it. Summarise
 the problem as if hearing it for the first time. List what you still need
 before a PRD. Then draft the PRD with non-functional requirements, close gaps
 with labelled assumptions, and state what it rests on. Then a
 technology-neutral diagram as Mermaid. Then an opinionated Azure overlay with
 the minimum services, rejected alternatives recorded, and a latency budget.
-Write everything under .copilot-tracking/dt/seatac-ground-stop/. Run without
+Write everything under .copilot-tracking/dt/i90-span-clear/. Run without
 stopping. Label all interviews role-play.
 ```
 
-4. PRD, diagram and overlay land under `dt/seatac-ground-stop/`.
+4. PRD, diagram and overlay land under `dt/i90-span-clear/`.
 
 ---pagebreak---
 
@@ -46,7 +46,7 @@ Write three predicted security findings on paper first. Two terminals.
 
 ```
 Use the security planner to plan the production security for this solution.
-PRD and architecture are under .copilot-tracking/dt/seatac-ground-stop/.
+PRD and architecture are under .copilot-tracking/dt/i90-span-clear/.
 Scoping answers are in security-scoping-answers.md in the same folder; treat
 every row as answered and labelled, do not ask them again. Threat-model the
 boundaries, map controls to OWASP, NIST and CIS, produce a backlog. Ask me only
@@ -70,12 +70,12 @@ Imagine the scoping answers, label them, run to completion unless blocking.
 
 ## Lab 3: Research, Plan, Implement
 
-8. Open your PRD under `dt/seatac-ground-stop/`. Pick one functional requirement the app could carry. One screen, one rule, one feed.
+8. Open your PRD under `dt/i90-span-clear/`. Pick one functional requirement the app could carry. One screen, one rule, one feed.
 9. `/clear`, then `/hve-core:rpi-agent`. Ask: "What do you need from me to create an RPI plan?" Then paste, filled in:
 
 ```
 Goal: implement <requirement, one sentence> from the PRD at
-.copilot-tracking/dt/seatac-ground-stop/<prd file>.
+.copilot-tracking/dt/i90-span-clear/<prd file>.
 Scope: <one component or module>. Nothing else.
 Acceptance criteria: <two or three testable lines>.
 Constraints: no backend, no tracker, no cloud tenant; mock or defer and log

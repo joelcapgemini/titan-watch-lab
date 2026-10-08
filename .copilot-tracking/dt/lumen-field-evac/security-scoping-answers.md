@@ -26,5 +26,5 @@ answers are in security-scoping-answers.md in the same folder; treat every row
 as answered and labelled, do not ask them again. Threat-model the boundaries,
 map controls to OWASP, NIST and CIS, produce a backlog. Ask me only about severe
 or blocking issues. Run all phases without stopping. Prioritise by severity.
-Commit only, never push.
+Do not commit or push.
 ```

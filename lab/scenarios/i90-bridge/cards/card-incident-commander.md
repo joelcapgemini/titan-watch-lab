@@ -42,17 +42,6 @@ Out of scope:
 
 "I do not know." - "Assume and label it." - "Ask the specialist, then tell me."
 
-## Your prompt
+## Next
 
-`/clear`, `/hve-core:dt-coach`, paste. Afterwards: commit locally, no push, then the synthesis prompt from the shared instructions.
-
-```
-Resume project i90-span-clear. Scope is done under
-.copilot-tracking/dt/i90-span-clear/; read it, including every interview
-there, do not redo it. I play the incident commander with full authority: the
-specialists in those interviews report to me and carry out my orders. I see
-only what they report. Interview me as that role, five questions, using what
-the specialists said. Then write interview-commander-roleplay.md under slug
-i90-span-clear-commander. Label everything role-play. Expect a software
-tool. Do not offer the canonical deck.
-```
+Turn the page. The run sheet has every command and prompt for this scenario, in order.

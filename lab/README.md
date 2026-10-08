@@ -26,7 +26,7 @@ Open the local URL. Four kaiju on the map, six on the roster. Stop the dev serve
 **Before typing anything**
 
 - Open Claude Code inside the `titan-watch-lab` folder. Run `pwd` to confirm. An agent writes wherever it is.
-- `git checkout -b <your-name>`. Commit on that branch. Never push.
+- No branches, no commits, no pushes. Work in your clone and leave it there. When an agent offers to commit, say no.
 - Approve every permission prompt by hand. Never auto-approve.
 - Always type the agent command, never the prompt command. Prompt commands such as `security-plan-from-prd`, `rai-capture` and `rpi` fail with "needs the role loaded first".
 - `/clear` before every lab.
@@ -58,9 +58,9 @@ Where this document says `<slug>`, use yours.
 
 1. Paste the prompt from your card. The coach asks five questions built on what the specialists said.
 2. Answer as the commander. You see only what they report. Outside your card's scope: "I do not know", "that is not my call, ask the specialist", or "assume and label it".
-3. The coach writes `interview-commander-roleplay.md` under `dt/<slug>-commander/`. Read it once. Commit.
+3. The coach writes `interview-commander-roleplay.md` under `dt/<slug>-commander/`. Read it once.
 4. Paste the synthesis prompt below. The coach restates the outcome, synthesises, drafts a PRD, a diagram and an Azure overlay, without stopping. About 10 to 15 minutes.
-5. Write down one question the coach asked that you did not expect. Commit.
+5. Write down one question the coach asked that you did not expect.
 
 **Prompt, synthesis**
 
@@ -91,7 +91,7 @@ Two agents, two terminals, at the same time. Before either, write three security
 
 **Command:** `/clear`, then `/hve-core:security-planner`
 
-**What to expect.** It reads your PRD and overlay and the pre-written scoping answers, then runs six phases: scoping, threat model, controls mapped to OWASP, NIST and CIS, backlog, review, handoff. It delegates standards research to a subagent. 10 to 20 minutes. It asks to commit; say yes, never push.
+**What to expect.** It reads your PRD and overlay and the pre-written scoping answers, then runs six phases: scoping, threat model, controls mapped to OWASP, NIST and CIS, backlog, review, handoff. It delegates standards research to a subagent. 10 to 20 minutes. It may offer to commit; say no.
 
 **Process**
 
@@ -108,7 +108,7 @@ are in security-scoping-answers.md in the same folder; treat every row as
 answered and labelled, do not ask them again. Threat-model the boundaries, map
 controls to OWASP, NIST and CIS, produce a backlog. Ask me only about severe or
 blocking issues. Run all phases without stopping. Prioritise by severity.
-Commit only, never push.
+Do not commit or push.
 ```
 
 Not allowed: "assume I confirm everything".
@@ -137,7 +137,7 @@ life-safety decision as the central risk. Use project name single-save-decision.
 Imagine the scoping answers, label them, run to completion unless blocking.
 ```
 
-**Done when** both summaries exist and you can name one Critical threat you did not predict. Commit.
+**Done when** both summaries exist and you can name one Critical threat you did not predict.
 
 ---pagebreak---
 
@@ -153,7 +153,7 @@ Imagine the scoping answers, label them, run to completion unless blocking.
 2. Ask the agent: "What do you need from me to create an RPI plan?" It lists six things.
 3. Paste the prompt below with your six answers filled in.
 4. Research stops. Read the research file under `.copilot-tracking/research/`. Wrong? Edit the file, not the chat. Then `/hve-core:rpi-plan`.
-5. Plan stops, with an independent critique. Read both under `plans/` and `reviews/plans/`. Amend at least one item in the plan file: a status, a requirement, a test case. Tell the agent "plan amended in the file". Commit.
+5. Plan stops, with an independent critique. Read both under `plans/` and `reviews/plans/`. Amend at least one item in the plan file: a status, a requirement, a test case. Tell the agent "plan amended in the file".
 6. Homework: `/hve-core:rpi-implement`, then `/hve-core:rpi-review`. Bring the verdict next time.
 
 **Prompt**
@@ -176,4 +176,4 @@ Mode: research, stop for my review; plan, stop for my approval.
 
 ## 6. Close
 
-Three minutes per scenario, one presenter: one coach question you did not expect, one Critical threat you did not predict, one plan amendment and why, where the loop stopped. Gaps, not compliments. Everything stays on your local branch; never push.
+Three minutes per scenario, one presenter: one coach question you did not expect, one Critical threat you did not predict, one plan amendment and why, where the loop stopped. Gaps, not compliments. Everything stays in your clone.
