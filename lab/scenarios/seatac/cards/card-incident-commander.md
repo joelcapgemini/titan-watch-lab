@@ -47,7 +47,7 @@ Out of scope, you hand off:
 
 ## Your prompt
 
-`/clear`, then `/hve-core:dt-coach`, then paste:
+`/clear`, `/hve-core:dt-coach`, paste. Afterwards: commit locally, no push, then the synthesis prompt from the shared instructions.
 
 ```
 Resume project seatac-ground-stop. Scope is done under
@@ -59,7 +59,3 @@ Then write interview-commander-roleplay.md under slug
 seatac-ground-stop-commander. Label everything role-play. Expect a software
 tool. Do not offer the canonical deck.
 ```
-
-## After your interview
-
-Commit locally. Do not push. Then run the synthesis prompt from the shared instructions, Section 1.
