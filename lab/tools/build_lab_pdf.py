@@ -158,8 +158,8 @@ def cover(title, subtitle, bullets):
 if MODE == "instructions":
     story = cover(
         "The Kaiju Lab, compressed",
-        "Shared participant instructions - every scenario, same steps",
-        ["Overview and rules", "Before the session", "Section 1: Discovery", "Section 2: Security and Responsible AI", "Section 3: Research, Plan, Implement", "Show-and-tell and close"],
+        "Participant instructions - setup, scenarios, three labs",
+        ["1. Setup: what you need, the repository, download, before typing", "2. Pick a scenario", "3. Lab 1: Discovery with the Design Thinking Coach", "4. Lab 2: Security planner and Responsible AI planner", "5. Lab 3: Research, Plan, Implement", "6. Close"],
     )
     story += render_markdown((ROOT / "lab" / "README.md").read_text(encoding="utf-8"))
     label = "Kaiju Lab, compressed - Shared instructions - Capgemini internal"

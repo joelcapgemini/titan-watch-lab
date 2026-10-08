@@ -1,81 +1,66 @@
-# Kaiju Lab, compressed: shared instructions
+# Kaiju Lab, compressed
 
-Same steps for every scenario. One repo holds all four scenarios, pre-seeded under `.copilot-tracking/dt/<slug>/`. You pick one scenario pack; it has the kaiju facts, your card, what you are graded on, and the slug. Where this document says `<slug>`, use the one from your pack.
+Three labs, about 25, 20 and 25 minutes. Individual work. You play the incident commander in one scenario and take one slice of a vibe-coded kaiju command centre from discovery to a plan, using the HVE method and the hve-core agents on Claude Code.
 
-| Scenario | Kaiju | Clock | Slug | Pack |
-|----------|-------|-------|------|------|
-| 1 Sixty-eight thousand at Lumen Field | Gorathos | 11 min to the seawall | `lumen-field-evac` | `lab/scenarios/lumen-field/` |
-| 2 The bridge is floating | Terrakon | 26 min to the anchor line | `i90-span-clear` | `lab/scenarios/i90-bridge/` |
-| 3 Forty aircraft on approach | Vespyra | 19 min to the outer marker | `seatac-ground-stop` | `lab/scenarios/seatac/` |
-| 4 The locks | Skarnyx | No clock; that is the problem | `ballard-locks-alert` | `lab/scenarios/ballard-locks/` |
+## 1. Setup
 
-Individual work. Three sections, about 25, 20 and 25 minutes. You touch discovery, security, Responsible AI and the research-plan-implement loop. You finish none of them. That is the point.
+**What you need**
 
-You play one role in every scenario: the incident commander. Everyone else has already been interviewed. The coach has read those interviews and will quiz you on them.
+- Claude Code with the hve-core plugin installed. Check: `/plugin` lists `hve-core`; typing `/hve-core:` shows commands.
+- Node 22 and git.
+- A reasoning model, chosen by hand in Claude Code. Automatic selection gives shallow coaching.
 
-## How it fits together
+**Repository:** `joelcapgemini/titan-watch-lab`, private. Ask the facilitator for access.
 
-Three agents, in order. Each one reads what the last one wrote to `.copilot-tracking/`. Nothing carries over in chat; `/clear` between every section.
+**Download**
 
-| Section | Agent | Reads | Writes | You do |
-|---------|-------|-------|--------|--------|
-| 1 Discovery | `dt-coach` | Pre-seeded scope and nine interviews | Your interview, synthesis, PRD, diagram, Azure overlay under `dt/<slug>/` | Answer five questions, then one synthesis prompt |
-| 2a Security | `security-planner` | Your PRD and overlay, the scoping answers | Threat model and backlog under `security-plans/` | Predict three findings, fire it, compare |
-| 2b Responsible AI | `rai-planner-agent` | The app's Last Stand scene | Assessment and gates under `rai-plans/` | Fire it, read the verdict |
-| 3 Research, Plan | `rpi-agent` | Your PRD, one requirement | Research and plan under `research/`, `plans/` | Pick the requirement, amend the plan |
-| Homework | `rpi-implement`, `rpi-review` | The plan | Code, changes log, review | Approve edits, read the verdict |
+```
+git clone https://github.com/joelcapgemini/titan-watch-lab
+cd titan-watch-lab
+npm install
+npm run dev
+```
 
-## The coach's nine methods
+Open the local URL. Four kaiju on the map, six on the roster. Stop the dev server.
 
-The Design Thinking Coach works through nine methods. Folder names under `dt/<slug>/` match them. In this lab you touch 2 and 3 yourself; the coach runs 4 to 7 in one prompt and marks 6, 8 and 9 skipped.
+**Before typing anything**
 
-| Method | Name | Output | Here |
-|--------|------|--------|------|
-| 1 | Scope conversations | Stakeholder map, scope, assumptions | Pre-seeded |
-| 2 | Research | Interviews | Nine pre-seeded, one by you |
-| 3 | Synthesis | Themes, problem definition | Your synthesis prompt |
-| 4, 5 | Brainstorming, concepts | Ideas, three concepts, one chosen | Coach, same prompt |
-| 6 | Prototyping | Paper prototype | Skipped, labelled |
-| 7 | Design | Diagram, Azure overlay | Coach, same prompt |
-| 8, 9 | Testing, iteration | Feedback, revision | Skipped, labelled |
-
-## Rules
-
-- Kaiju facts are fixed. Page 1 of your pack has everything you need; the coach holds the rest. Never invent them.
-- Human facts are yours. Invent them in role, and label them.
-- "I do not know" and "assume and label it" are good answers.
+- Open Claude Code inside the `titan-watch-lab` folder. Run `pwd` to confirm. An agent writes wherever it is.
+- `git checkout -b <your-name>`. Commit on that branch. Never push.
 - Approve every permission prompt by hand. Never auto-approve.
-- Nothing real goes in the workspace. Commit locally. Never push.
-- `main` is the clean baseline. Work on your own branch.
+- Always type the agent command, never the prompt command. Prompt commands such as `security-plan-from-prd`, `rai-capture` and `rpi` fail with "needs the role loaded first".
+- `/clear` before every lab.
+
+## 2. Pick a scenario
+
+One scenario, one role: the incident commander, full authority. Everyone else has been interviewed already. Read the two-page pack for your scenario and nothing else.
+
+| Scenario | Clock | Slug | Pack |
+|----------|-------|------|------|
+| 1 Sixty-eight thousand at Lumen Field. Gorathos is coming ashore; empty the stadium or hold it | 11 min | `lumen-field-evac` | `lab/scenarios/lumen-field/` |
+| 2 The bridge is floating. Terrakon is heading for Mercer Island; clear the I-90 span or keep it open | 26 min | `i90-span-clear` | `lab/scenarios/i90-bridge/` |
+| 3 Forty aircraft on approach. Vespyra crosses the Sea-Tac corridor; land them or divert them | 19 min | `seatac-ground-stop` | `lab/scenarios/seatac/` |
+| 4 The locks. Skarnyx may be under the Ballard Locks; alert three cities on sonar alone, or wait | none | `ballard-locks-alert` | `lab/scenarios/ballard-locks/` |
+
+Where this document says `<slug>`, use yours.
 
 ---pagebreak---
 
-# Before the session
+## 3. Lab 1: Discovery
 
-Do these the week before. Blocked on any of them, tell the facilitator before the day.
+**Command:** `/clear`, then `/hve-core:dt-coach`
 
-1. Claude Code installed with the hve-core plugin. `/plugin` lists it; typing `/hve-core:` shows commands.
-2. Clone the lab repo: `git clone https://github.com/joelcapgemini/titan-watch-lab`. Node 22. `npm install`, then `npm run dev`. Four kaiju visible on the map; the roster shows six.
-3. Pick a scenario. Read its pack: page 1 and your card. Nothing else.
-4. Pick a reasoning model by hand. Automatic selection gives shallow coaching.
+**What to expect.** The Design Thinking Coach. It reads the pre-seeded scope and the specialist interviews under `.copilot-tracking/dt/<slug>/`, then interviews you as the commander. It writes everything to that folder. It will say which of its nine methods it is on; you touch Research and Synthesis, it runs the rest.
 
-On the day, before typing:
+**Process**
 
-- Open Claude Code **in the repo folder**, not a parent. Run `pwd` and check. An agent writes wherever it is.
-- `git checkout -b <your-name>` from `main`. Commit there. Never push.
-- `/clear` at the start of every section. A prompt typed into the wrong agent produces confident nonsense.
-- Always type the agent command, never the prompt command. `/hve-core:dt-coach`, `/hve-core:security-planner`, `/hve-core:rai-planner-agent`, `/hve-core:rpi-agent`. The prompt commands such as `security-plan-from-prd`, `rai-capture` and `rpi` fail with "needs the role loaded first". Known defect in the Claude Code conversion.
-- Open `.copilot-tracking/` in your file explorer. Watch files appear. That folder is what gets reviewed, not your chat.
+1. Paste the prompt from your card. The coach asks five questions built on what the specialists said.
+2. Answer as the commander. You see only what they report. Outside your card's scope: "I do not know", "that is not my call, ask the specialist", or "assume and label it".
+3. The coach writes `interview-commander-roleplay.md` under `dt/<slug>-commander/`. Read it once. Commit.
+4. Paste the synthesis prompt below. The coach restates the outcome, synthesises, drafts a PRD, a diagram and an Azure overlay, without stopping. About 10 to 15 minutes.
+5. Write down one question the coach asked that you did not expect. Commit.
 
----pagebreak---
-
-# Section 1: Discovery
-
-**Goal.** One interview, you as incident commander, against the fixed outcome. Then one synthesis that produces a PRD, a technology-neutral diagram and an Azure overlay.
-
-**Interview.** `/clear`, then `/hve-core:dt-coach`, then paste the prompt on your card. The coach reads the shared scope and the pre-seeded specialist interviews, then asks you five questions built on what the specialists said. Answer as the commander: you see only what they report, you decide, they act. Outside your card's scope, say "I do not know" or "that is not my call, ask the specialist". For fictional detail, "assume and label it". When the coach writes your interview file, read it once. Commit.
-
-**Synthesis.** Same session, paste:
+**Prompt, synthesis**
 
 ```
 Project <slug>. Read the shared scope under .copilot-tracking/dt/<slug>/,
@@ -90,21 +75,29 @@ Write everything under .copilot-tracking/dt/<slug>/. Run without stopping.
 Label all interviews role-play.
 ```
 
-**While it runs.** Write down one question the coach asked that you did not expect.
+**If.** Coach restarts scope: "scope is done, read coaching-state.md". Coach says no software is needed: "a software tool is expected, continue". Coach offers the canonical deck: "no, do not ask again".
 
-**Done when.** PRD, diagram and overlay exist. Commit.
-
-**If.** Coach restarts scope: "scope is done, read coaching-state.md". Coach declares no software needed: "a software tool is expected, continue". Coach offers the canonical deck: "no, do not ask again".
+**Done when** the PRD, diagram and overlay exist under `dt/<slug>/`.
 
 ---pagebreak---
 
-# Section 2: Security and Responsible AI
+## 4. Lab 2: Security and Responsible AI
 
-**Goal.** A severity-ranked threat model against your PRD, and a Responsible AI assessment of the app's Last Stand decision. Two terminals, in parallel.
+Two agents, two terminals, at the same time. Before either, write three security findings you predict. Paper.
 
-**First.** Write three security findings you predict the planner will raise. Paper. Keep it.
+### Security planner
 
-**Terminal 1, security.** `/clear`, then `/hve-core:security-planner`, then:
+**Command:** `/clear`, then `/hve-core:security-planner`
+
+**What to expect.** It reads your PRD and overlay and the pre-written scoping answers, then runs six phases: scoping, threat model, controls mapped to OWASP, NIST and CIS, backlog, review, handoff. It delegates standards research to a subagent. 10 to 20 minutes. It asks to commit; say yes, never push.
+
+**Process**
+
+1. Paste the prompt. Approve prompts as they come. It should not ask scoping questions; if it does, point it at the answers file.
+2. When it finishes, ask: "Plan summary by severity: counts per level, Critical items one line each, recommended next planner."
+3. Compare the Critical list with your paper.
+
+**Prompt**
 
 ```
 Use the security planner to plan the production security for this solution.
@@ -116,9 +109,21 @@ blocking issues. Run all phases without stopping. Prioritise by severity.
 Commit only, never push.
 ```
 
-Approve prompts as they come. Allowed: it answers its own scoping. Not allowed: "assume I confirm everything". When done, ask for the plan summary by severity, counts per level, Critical items one line each, and its recommended next planner. Compare the Critical list with your paper.
+Not allowed: "assume I confirm everything".
 
-**Terminal 2, Responsible AI.** `/clear`, then `/hve-core:rai-planner-agent`, then:
+### Responsible AI planner
+
+**Command:** `/clear`, then `/hve-core:rai-planner-agent`
+
+**What to expect.** It assesses the app's Last Stand scene, a coin flip that picks which of two cities to save, against the NIST AI Risk Management Framework. It opens with two observations before any question. Under 10 minutes. Expect a no-go verdict and a list of minimum conditions.
+
+**Process**
+
+1. Paste the prompt. Read the two opening observations before replying.
+2. Do not argue the risk down. "It is only a game" is cheating.
+3. When done, read the go/no-go and the minimum conditions.
+
+**Prompt**
 
 ```
 Run an RAI assessment on the single-save decision: the disaster-recovery AI in
@@ -130,19 +135,26 @@ life-safety decision as the central risk. Use project name single-save-decision.
 Imagine the scoping answers, label them, run to completion unless blocking.
 ```
 
-Read the two opening observations before replying. Do not argue the risk down; "it is only a game" is cheating. When done, read the go/no-go and the minimum conditions.
-
-**Done when.** Both summaries exist. You can name one Critical threat you did not predict and one RAI minimum condition an engineer would have skipped. Commit.
+**Done when** both summaries exist and you can name one Critical threat you did not predict. Commit.
 
 ---pagebreak---
 
-# Section 3: Research, Plan, Implement
+## 5. Lab 3: Research, Plan, Implement
 
-**Goal.** One feature from your own PRD, researched and planned against the app. Implement is homework. The plan gate is the human decision in this loop; that is the part you do in the room.
+**Command:** `/clear`, then `/hve-core:rpi-agent`
 
-**Pick the feature.** Open your PRD. Choose one functional requirement the sample app could plausibly carry. One screen, one rule, one feed. Not the whole PRD.
+**What to expect.** The RPI agent takes one feature from your PRD through research, plan, implement and review. It stops at each gate for you. Research and plan happen in the room. Implement and review are homework. The plan gate is the human decision in this loop.
 
-**Ask, then give.** `/clear`, `/hve-core:rpi-agent`, then "What do you need from me to create an RPI plan?" It lists six things. Answer with exactly those:
+**Process**
+
+1. Open your PRD. Pick one functional requirement the sample app could carry: one screen, one rule, one feed. Not the whole PRD.
+2. Ask the agent: "What do you need from me to create an RPI plan?" It lists six things.
+3. Paste the prompt below with your six answers filled in.
+4. Research stops. Read the research file under `.copilot-tracking/research/`. Wrong? Edit the file, not the chat. Then `/hve-core:rpi-plan`.
+5. Plan stops, with an independent critique. Read both under `plans/` and `reviews/plans/`. Amend at least one item in the plan file: a status, a requirement, a test case. Tell the agent "plan amended in the file". Commit.
+6. Homework: `/hve-core:rpi-implement`, then `/hve-core:rpi-review`. Bring the verdict next time.
+
+**Prompt**
 
 ```
 Goal: implement <the requirement, one sentence> from the PRD at
@@ -156,31 +168,10 @@ Context: the PRD and the Azure overlay in the same folder.
 Mode: research, stop for my review; plan, stop for my approval.
 ```
 
-**Research gate.** Read the research file under `.copilot-tracking/research/`. Wrong? Edit the file, not the chat. Then `/hve-core:rpi-plan`.
+**If.** It asks for a tracker, backend or tenant: "none exists, mock or defer, log the gap". It implements before you approved: cancel, restart from the plan file. Your PRD is too thin to plan from: a pre-seeded plan for the Last Stand feature is under `plans/2026-10-07/`; resume task `single-save-decision-governance` at the plan gate.
 
-**Plan gate.** Read the plan and its critique under `.copilot-tracking/plans/` and `reviews/plans/`. Amend at least one item in the file: change a status, add a requirement, add a test case. Then tell the agent "plan amended in the file". Commit.
+**Done when** research and plan exist and the plan carries your amendment.
 
-**Homework.** `/hve-core:rpi-implement`, then `/hve-core:rpi-review`. Bring the review verdict to the next session. If your PRD came out too thin to plan from, the Last Stand feature is pre-seeded under `plans/2026-10-07/` as a fallback.
+## 6. Close
 
-**Done when.** Research and plan exist, the plan carries your amendment, and the critique has run.
-
----pagebreak---
-
-# Show-and-tell and close
-
-Three minutes per scenario, one presenter. Four items, one sentence each.
-
-1. One coach question you did not expect.
-2. One Critical threat you did not predict.
-3. One plan amendment and why.
-4. Where the loop stopped.
-
-Room names gaps, not compliments.
-
-**Closing questions.**
-
-- Which finding would your team have missed without the planner?
-- The review finds zero defects and still refuses acceptance. Would you have shipped?
-- What broke today, and would it break on a client machine?
-
-**Afterwards.** Everything is on your local branch. The agent wrote the commit messages. Never push.
+Three minutes per scenario, one presenter: one coach question you did not expect, one Critical threat you did not predict, one plan amendment and why, where the loop stopped. Gaps, not compliments. Everything stays on your local branch; never push.
