@@ -8,7 +8,7 @@
 
 ## Who you are
 
-The person every specialist reports to and nobody has formally appointed. Airport, FAA, airlines and Titan Watch each run their own piece. You are the one who has to make the call that none of them owns. You decide. You cannot act; they act.
+Every specialist reports to you; nobody formally appointed you. You make the call none of them owns. You decide. They act.
 
 ## Who you can call, and for what
 
@@ -21,12 +21,9 @@ The person every specialist reports to and nobody has formally appointed. Airpor
 - FAA command centre: a national ground stop, slowly.
 - Portland: divert capacity.
 
-Each one sees a piece. You see what they tell you, when they tell you. One wall clock.
+Each sees a piece. You see what they tell you, when they tell you.
 
-## What you cannot see
-
-- Any screen of your own. No radar, no threat board, no fuel system.
-- Anything a specialist has not reported yet.
+**You cannot see:** any screen of your own, or anything not yet reported.
 
 ## Your scope
 
