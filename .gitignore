@@ -1,4 +1,5 @@
-.copilot-tracking/
+# Lab fork: the tracking folder is committed on purpose so a team can share
+# discovery artifacts through pull requests. Do not copy this to a real project.
 workshop/
 # Logs
 logs
