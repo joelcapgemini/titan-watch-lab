@@ -170,6 +170,9 @@ else:
     for p in sorted((folder / "cards").glob("card-*.md")):
         story.append(PageBreak())
         story += render_markdown(p.read_text(encoding="utf-8"))
+    if (folder / "run-sheet.md").exists():
+        story.append(PageBreak())
+        story += render_markdown((folder / "run-sheet.md").read_text(encoding="utf-8"))
     label = "Kaiju Lab, compressed - Scenario pack: " + folder.name + ""
     title = "The Kaiju Lab, compressed: Scenario pack " + folder.name
 
