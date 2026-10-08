@@ -55,7 +55,7 @@ The Design Thinking Coach works through nine methods. Folder names under `dt/<sl
 Do these the week before. Blocked on any of them, tell the facilitator before the day.
 
 1. Claude Code installed with the hve-core plugin. `/plugin` lists it; typing `/hve-core:` shows commands.
-2. Clone the lab repo: `git clone https://github.com/joelcapgemini/titan-watch-seatac`. Node 22. `npm install`, then `npm run dev`. Four kaiju visible on the map; the roster shows six.
+2. Clone the lab repo: `git clone https://github.com/joelcapgemini/titan-watch-lab`. Node 22. `npm install`, then `npm run dev`. Four kaiju visible on the map; the roster shows six.
 3. Pick a scenario. Read its pack: page 1 and your card. Nothing else.
 4. Pick a reasoning model by hand. Automatic selection gives shallow coaching.
 

@@ -1,6 +1,6 @@
 # Scenario 2: The bridge is floating
 
-**Slug:** `i90-span-clear` - **Repo:** github.com/joelcapgemini/titan-watch-seatac - **Your role:** incident commander, full authority, next page
+**Slug:** `i90-span-clear` - **Repo:** github.com/joelcapgemini/titan-watch-lab - **Your role:** incident commander, full authority, next page
 
 ## The kaiju, in thirty seconds
 

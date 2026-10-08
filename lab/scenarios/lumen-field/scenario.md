@@ -1,6 +1,6 @@
 # Scenario 1: Sixty-eight thousand at Lumen Field
 
-**Slug:** `lumen-field-evac` - **Repo:** github.com/joelcapgemini/titan-watch-seatac - **Your role:** incident commander, full authority, next page
+**Slug:** `lumen-field-evac` - **Repo:** github.com/joelcapgemini/titan-watch-lab - **Your role:** incident commander, full authority, next page
 
 ## The kaiju, in thirty seconds
 

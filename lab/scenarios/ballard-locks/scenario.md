@@ -1,6 +1,6 @@
 # Scenario 4: The locks
 
-**Slug:** `ballard-locks-alert` - **Repo:** github.com/joelcapgemini/titan-watch-seatac - **Your role:** incident commander, full authority, next page
+**Slug:** `ballard-locks-alert` - **Repo:** github.com/joelcapgemini/titan-watch-lab - **Your role:** incident commander, full authority, next page
 
 ## The kaiju, in thirty seconds
 
