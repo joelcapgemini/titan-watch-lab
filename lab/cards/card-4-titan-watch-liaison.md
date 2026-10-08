@@ -46,5 +46,5 @@ software tool. Do not offer the canonical deck.
 
 ## After your interview
 
-1. `git checkout -b titan-watch-liaison`, commit, push, open a pull request.
+1. `git checkout -b <cohort>/titan-watch-liaison`, commit, push, open a pull request with base `team/<cohort>`, never `main`.
 2. Open `.copilot-tracking/dt/` in the file explorer and watch files appear during synthesis. Write down one thing the coach said that none of the four interviews said.

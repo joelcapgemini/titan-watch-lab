@@ -46,6 +46,6 @@ tool. Do not offer the canonical deck.
 
 ## After your interview
 
-1. `git checkout -b duty-manager`, commit, push, open a pull request.
-2. Merge all four pull requests into `main`. Fewer than four people? Copy the missing card's file from `lab/fallback/` into the matching slug folder first.
+1. `git checkout -b <cohort>/duty-manager`, commit, push, open a pull request with base `team/<cohort>`, never `main`.
+2. Merge all four pull requests into `team/<cohort>`. Fewer than four people? Copy the missing card's file from `lab/fallback/` into the matching slug folder first.
 3. `git pull`, then run the synthesis prompt from `lab/README.md`.

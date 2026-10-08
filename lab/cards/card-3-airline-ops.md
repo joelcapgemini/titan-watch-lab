@@ -46,5 +46,5 @@ tool. Do not offer the canonical deck.
 
 ## After your interview
 
-1. `git checkout -b airline-ops`, commit, push, open a pull request.
+1. `git checkout -b <cohort>/airline-ops`, commit, push, open a pull request with base `team/<cohort>`, never `main`.
 2. Open a second terminal in the repo root for section 2.

@@ -46,5 +46,5 @@ software tool. Do not offer the canonical deck.
 
 ## After your interview
 
-1. `git checkout -b approach-controller`, commit, push, open a pull request.
+1. `git checkout -b <cohort>/approach-controller`, commit, push, open a pull request with base `team/<cohort>`, never `main`.
 2. Write three security findings you predict the planner will raise. Paper. Keep it for section 2.

@@ -22,6 +22,7 @@ Three people: card 1 takes card 4's duty. Two people: cards 1 and 2; card 1 runs
 - "I do not know" and "assume and label it" are good answers.
 - Approve every permission prompt by hand. Never auto-approve.
 - Nothing real goes in the workspace. Push only to this repo.
+- Never touch `main`. Your cohort works on `team/<cohort>`; every pull request targets that branch. `main` is the clean baseline, tagged `lab-baseline`.
 
 ---pagebreak---
 
@@ -38,6 +39,7 @@ Do these the week before. Blocked on any of them, tell the facilitator before th
 On the day, before typing:
 
 - Open Claude Code **in this repo folder**, not a parent. Run `pwd` and check. An agent writes wherever it is.
+- Start from your cohort's branch, never `main`: `git fetch`, then `git checkout team/<cohort>`. The facilitator tells you the cohort name.
 - `/clear` at the start of every section. A prompt typed into the wrong agent produces confident nonsense.
 - Open `.copilot-tracking/` in your file explorer. Watch files appear. That folder is what gets reviewed, not your chat.
 
@@ -49,9 +51,9 @@ On the day, before typing:
 
 **Everyone.** `/clear`, then `/hve-core:dt-coach`, then paste the prompt on your card. The coach reads the shared scope and asks five questions. Answer from inside your "can see" window. Outside it, say "I do not know" or "that is not my call, ask X". For fictional detail, "assume and label it". When the coach writes your interview file, read it once.
 
-Then: `git checkout -b <your-role>`, commit, push, open a pull request.
+Then: `git checkout -b <cohort>/<your-role>`, commit, push, open a pull request with base `team/<cohort>`. Not `main`.
 
-**Lead.** Merge all pull requests. Fewer than four people: copy each unassigned card's folder from `lab/fallback/` into `.copilot-tracking/dt/` first. `git pull`. Then `/clear`, `/hve-core:dt-coach`, and:
+**Lead.** Merge all pull requests into `team/<cohort>`. Fewer than four people: copy each unassigned card's folder from `lab/fallback/` into `.copilot-tracking/dt/` first. `git pull`. Then `/clear`, `/hve-core:dt-coach`, and:
 
 ```
 Project seatac-ground-stop. Read the shared scope under
