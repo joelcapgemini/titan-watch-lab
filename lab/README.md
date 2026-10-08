@@ -31,6 +31,8 @@ Open the local URL. Four kaiju on the map, six on the roster. Stop the dev serve
 - Always type the agent command, never the prompt command. Prompt commands such as `security-plan-from-prd`, `rai-capture` and `rpi` fail with "needs the role loaded first".
 - `/clear` before every lab.
 
+---pagebreak---
+
 ## 2. Pick a scenario
 
 One scenario, one role: the incident commander, full authority. Everyone else has been interviewed already. Read the two-page pack for your scenario and nothing else.
