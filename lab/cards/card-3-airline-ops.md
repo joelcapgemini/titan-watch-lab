@@ -1,6 +1,6 @@
 # Card 3: Airline operations controller
 
-**Scenario 3: forty aircraft on approach.** Vespyra crosses the Sea-Tac approach corridor in 19 minutes. Monster facts are in `.copilot-tracking/dt/seatac-ground-stop/world-rules.md`. Do not invent them. Human facts are yours: invent them and say "assume and label it".
+**Scenario 3: forty aircraft on approach.** Vespyra crosses the Sea-Tac approach corridor in 19 minutes. Monster facts: `world-rules.md`, fixed. Human facts: yours, invent and label.
 
 **Your duty on this card:** RAI driver. In section 2 you run the Responsible AI planner in a second terminal.
 
@@ -20,6 +20,18 @@
 - Radar. You know where your aircraft were at the last position report.
 - Vespyra, Titan Watch, or the tower frequency.
 
+## Your scope
+
+In scope, you decide:
+- Which of your 14 aircraft can divert, and to where, on fuel and crew limits.
+- What your captains are told, through dispatch.
+- Whether to declare a fuel or medical priority for one of yours.
+
+Out of scope, you hand off:
+- Any aircraft that is not yours. The other five airlines.
+- Sequencing and headings. Approach.
+- Whether a divert is ordered at all. FAA command centre.
+
 ## Anchors, fixed
 
 - Your fleet is 14 of the 40 aircraft.
@@ -27,9 +39,7 @@
 
 ## Three phrases
 
-- "I do not know."
-- "Assume and label it."
-- "That is not my call. Ask approach." (or the tower, or the other airlines)
+"I do not know." - "Assume and label it." - "That is not my call. Ask approach." (or the tower, or the other airlines).
 
 ## Your prompt
 

@@ -1,6 +1,6 @@
 # Card 2: TRACON approach controller, Sea-Tac
 
-**Scenario 3: forty aircraft on approach.** Vespyra crosses the Sea-Tac approach corridor in 19 minutes. Monster facts are in `.copilot-tracking/dt/seatac-ground-stop/world-rules.md`. Do not invent them. Human facts are yours: invent them and say "assume and label it".
+**Scenario 3: forty aircraft on approach.** Vespyra crosses the Sea-Tac approach corridor in 19 minutes. Monster facts: `world-rules.md`, fixed. Human facts: yours, invent and label.
 
 **Your duty on this card:** security driver. In section 2 you run the security planner.
 
@@ -20,6 +20,18 @@
 - Vespyra's projected track. Titan Watch owns that and you are not on their board.
 - Runway surface or ground readiness.
 
+## Your scope
+
+In scope, you decide:
+- Sequence, heading and altitude for every aircraft in approach airspace.
+- Who goes around and who holds.
+- Which aircraft are sent toward a divert field once a divert is ordered.
+
+Out of scope, you hand off:
+- Whether a ground stop or divert is ordered at all. FAA command centre.
+- Whether an aircraft has the fuel for the divert you give it. Airline ops.
+- Landing clearance on the runway. Tower.
+
 ## Anchors, fixed
 
 - 40 aircraft in your airspace. 12 are on final and will land or go around regardless.
@@ -27,9 +39,7 @@
 
 ## Three phrases
 
-- "I do not know."
-- "Assume and label it."
-- "That is not my call. Ask airline ops." (or the tower, or Titan Watch)
+"I do not know." - "Assume and label it." - "That is not my call. Ask airline ops." (or the tower, or Titan Watch).
 
 ## Your prompt
 

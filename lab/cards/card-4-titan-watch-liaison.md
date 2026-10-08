@@ -1,6 +1,6 @@
 # Card 4: Titan Watch liaison at Sea-Tac
 
-**Scenario 3: forty aircraft on approach.** Vespyra crosses the Sea-Tac approach corridor in 19 minutes. Monster facts are in `.copilot-tracking/dt/seatac-ground-stop/world-rules.md`. Do not invent them. Human facts are yours: invent them and say "assume and label it".
+**Scenario 3: forty aircraft on approach.** Vespyra crosses the Sea-Tac approach corridor in 19 minutes. Monster facts: `world-rules.md`, fixed. Human facts: yours, invent and label.
 
 **Your duty on this card:** reviewer. You read every file as it lands and write down one gap the coach found that nobody said. In section 3 you read the plan first.
 
@@ -20,6 +20,18 @@
 - Whether anyone in the tower or at approach has heard what you know.
 - Fuel, runways, or who is in charge of the decision.
 
+## Your scope
+
+In scope, you decide:
+- What you tell the duty manager, how often, and how you phrase the uncertainty.
+- When the estimate is stale enough to say "do not trust this".
+- What to ask the command centre on the airport's behalf.
+
+Out of scope, you hand off:
+- Any order to anyone. You have no authority. Duty manager, FAA.
+- The track model itself. Titan Watch duty analyst.
+- Anything about aircraft, runways or fuel.
+
 ## Anchors, fixed
 
 - The 19-minute figure is a straight-line estimate. Vespyra accelerates into weather. There is a front south-west of the field.
@@ -27,9 +39,7 @@
 
 ## Three phrases
 
-- "I do not know."
-- "Assume and label it."
-- "That is not my call. Ask the duty manager." (or the FAA, or the command centre)
+"I do not know." - "Assume and label it." - "That is not my call. Ask the duty manager." (or the FAA, or the command centre).
 
 ## Your prompt
 
@@ -47,4 +57,4 @@ software tool. Do not offer the canonical deck.
 ## After your interview
 
 1. `git checkout -b <cohort>/titan-watch-liaison`, commit, push, open a pull request with base `team/<cohort>`, never `main`.
-2. Open `.copilot-tracking/dt/` in the file explorer and watch files appear during synthesis. Write down one thing the coach said that none of the four interviews said.
+2. Watch `.copilot-tracking/dt/` fill during synthesis. Write down one thing the coach said that no interview said.

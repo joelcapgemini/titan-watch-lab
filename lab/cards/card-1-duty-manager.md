@@ -1,6 +1,6 @@
 # Card 1: Airport duty manager, Port of Seattle
 
-**Scenario 3: forty aircraft on approach.** Vespyra crosses the Sea-Tac approach corridor in 19 minutes. Monster facts are in `.copilot-tracking/dt/seatac-ground-stop/world-rules.md`. Do not invent them. Human facts are yours: invent them and say "assume and label it".
+**Scenario 3: forty aircraft on approach.** Vespyra crosses the Sea-Tac approach corridor in 19 minutes. Monster facts: `world-rules.md`, fixed. Human facts: yours, invent and label.
 
 **Your duty on this card:** lead. You merge the pull requests, run the synthesis, and drive the RPI session.
 
@@ -20,6 +20,18 @@
 - Fuel state of any aircraft.
 - Vespyra, except what the liaison tells you.
 
+## Your scope
+
+In scope, you decide:
+- Which runways are open and in what order they are cleared.
+- Where ground crews and fire and rescue stage.
+- When the airport declares it cannot take more arrivals.
+
+Out of scope, you hand off:
+- Land versus divert for any aircraft. Not yours; FAA or approach.
+- Anything about Vespyra's track. Titan Watch.
+- Fuel or crew limits. Airline ops.
+
 ## Anchors, fixed
 
 - You have three runways. Two are usable together in poor visibility.
@@ -27,9 +39,7 @@
 
 ## Three phrases
 
-- "I do not know."
-- "Assume and label it."
-- "That is not my call. Ask the tower." (or approach, or airline ops)
+"I do not know." - "Assume and label it." - "That is not my call. Ask the tower." (or approach, or airline ops).
 
 ## Your prompt
 
