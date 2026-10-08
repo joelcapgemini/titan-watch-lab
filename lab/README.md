@@ -170,7 +170,7 @@ Context: the PRD and the Azure overlay in the same folder.
 Mode: research, stop for my review; plan, stop for my approval.
 ```
 
-**If.** It asks for a tracker, backend or tenant: "none exists, mock or defer, log the gap". It implements before you approved: cancel, restart from the plan file. Your PRD is too thin to plan from: a pre-seeded plan for the Last Stand feature is under `plans/2026-10-07/`; resume task `single-save-decision-governance` at the plan gate.
+**If.** It asks for a tracker, backend or tenant: "none exists, mock or defer, log the gap". It implements before you approved: cancel, restart from the plan file. Your PRD is too thin to plan from: ask the facilitator.
 
 **Done when** research and plan exist and the plan carries your amendment.
 
