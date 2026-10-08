@@ -61,14 +61,14 @@ async function icon(name, hex, px = 256) {
     user: await icon("FaUserShield", THEME.colors.lt1), chat: await icon("FaComments", THEME.colors.lt1),
     shield: await icon("FaShieldAlt", THEME.colors.lt1), scale: await icon("FaBalanceScale", THEME.colors.lt1),
     code: await icon("FaCode", THEME.colors.lt1), clock: await icon("FaClock", THEME.colors.lt1),
-    phone: await icon("FaPhoneAlt", THEME.colors.lt1), eyeslash: await icon("FaEyeSlash", THEME.colors.lt1),
+    phone: await icon("FaPhoneAlt", THEME.colors.lt1), eyeslash: await icon("FaDesktop", THEME.colors.lt1),
     flag: await icon("FaFlagCheckered", THEME.colors.lt1), check: await icon("FaCheck", THEME.colors.lt1),
     stadium: await icon("FaUsers", THEME.colors.lt1), bridge: await icon("FaRoad", THEME.colors.lt1),
     plane: await icon("FaPlaneArrival", THEME.colors.lt1), water: await icon("FaWater", THEME.colors.lt1),
     terminal: await icon("FaTerminal", THEME.colors.lt1), git: await icon("FaDownload", THEME.colors.lt1),
   };
 
-  const art = { clip: await pic("Clipzilla.png"), alarm: await pic("ClipzillaAlarm.png"), guide: await pic("Clipzilla-Guide.png"), gorathos: await pic("Monster-Gorathos.webp", 320), terrakon: await pic("Monster-Terrakon.webp", 320), vespyra: await pic("Monster-Vespyra.webp", 320) };
+  const art = { clip: await pic("Clipzilla.png"), alarm: await pic("ClipzillaAlarm.png"), guide: await pic("Clipzilla-Guide.png"), gorathos: await pic("Monster-Gorathos.webp", 320), terrakon: await pic("Monster-Terrakon.webp", 320), vespyra: await pic("Monster-Vespyra.webp", 320), skarnyx: await pic("Monster-Tidalith.webp", 320) };
 
   // helper: icon in colored circle
   function circleIcon(slide, data, x, y, d, fill, name) {
@@ -93,9 +93,9 @@ async function icon(name, hex, px = 256) {
   // 2 What this is
   s = pres.addSlide({ masterName: "LIGHT", sectionTitle: "Introduction" });
   s.addText("What we are doing", { placeholder: "title" });
-  const stats = [["1", "hour"], ["3", "labs"], ["1", "role"], ["4", "scenarios"]];
+  const stats = [["4", "scenarios"], ["3", "labs"]];
   stats.forEach(([n, l], i) => {
-    const x = 0.6 + i * 2.2;
+    const x = 0.6 + i * 2.6;
     s.addText(n, { x, y: 1.25, w: 2.0, h: 1.0, fontSize: 60, bold: true, color: C.accent2, margin: 0, isTextBox: true, objectName: "stat " + l });
     s.addText(l, { x, y: 2.2, w: 2.0, h: 0.4, fontSize: 14, color: C.accent5, margin: 0, isTextBox: true, objectName: "stat label " + l });
   });
@@ -115,20 +115,9 @@ async function icon(name, hex, px = 256) {
   // 3 The app
   s = pres.addSlide({ masterName: "LIGHT", sectionTitle: "Introduction" });
   s.addText("The Titan Watch command centre", { placeholder: "title" });
-  // schematic
-  const sx = 0.6, sy = 1.3, sw = 5.6, sh = 3.6;
-  s.addShape(pres.ShapeType.roundRect, { x: sx, y: sy, w: sw, h: sh, fill: { color: THEME.colors.dk1 }, line: { color: THEME.colors.dk1 }, rectRadius: 0.08, objectName: "app frame" });
-  s.addShape(pres.ShapeType.rect, { x: sx + 0.15, y: sy + 0.15, w: 1.25, h: sh - 0.3, fill: { color: THEME.colors.dk2 }, line: { color: THEME.colors.dk2 }, objectName: "roster panel" });
-  s.addText("LEVIATHAN ROSTER\n\nGorathos\nVespyra\nTerrakon\nNyxmora\nSkarnyx\nMolvorak", { x: sx + 0.15, y: sy + 0.15, w: 1.25, h: sh - 0.3, fontSize: 8, color: "CADCFC", margin: 6, valign: "top", isTextBox: true, objectName: "roster text" });
-  s.addShape(pres.ShapeType.rect, { x: sx + 1.5, y: sy + 0.15, w: 2.75, h: 2.3, fill: { color: "243055" }, line: { color: "243055" }, objectName: "map panel" });
-  s.addText("COMMAND MAP\nPuget Sound, six tracks", { x: sx + 1.5, y: sy + 0.15, w: 2.75, h: 0.5, fontSize: 8, color: "CADCFC", margin: 6, valign: "top", isTextBox: true, objectName: "map text" });
-  [[2.3, 1.0], [3.2, 1.6], [2.0, 1.9], [3.6, 0.9]].forEach(([dx, dy], i) => s.addShape(pres.ShapeType.ellipse, { x: sx + dx, y: sy + dy, w: 0.14, h: 0.14, fill: { color: THEME.colors.accent3 }, line: { color: THEME.colors.accent3 }, objectName: "kaiju marker " + i }));
-  s.addShape(pres.ShapeType.rect, { x: sx + 1.6, y: sy + 0.7, w: 1.0, h: 0.6, fill: { color: THEME.colors.dk1 }, line: { color: THEME.colors.accent1, width: 0.75 }, objectName: "last stand inset" });
-  s.addText("LAST STAND\ncoin flip", { x: sx + 1.6, y: sy + 0.7, w: 1.0, h: 0.6, fontSize: 7, color: C.accent1, margin: 4, valign: "middle", align: "center", isTextBox: true, objectName: "last stand text" });
-  s.addShape(pres.ShapeType.rect, { x: sx + 1.5, y: sy + 2.55, w: 2.75, h: 0.9, fill: { color: THEME.colors.dk2 }, line: { color: THEME.colors.dk2 }, objectName: "dispatch panel" });
-  s.addText("DISPATCH  ·  Scramble Jets  ·  Deploy Mechs  ·  Raise Barrier  ·  Evac Sector  ·  Citywide Alert", { x: sx + 1.5, y: sy + 2.55, w: 2.75, h: 0.9, fontSize: 7.5, color: "CADCFC", margin: 6, valign: "middle", isTextBox: true, objectName: "dispatch text" });
-  s.addShape(pres.ShapeType.rect, { x: sx + 4.35, y: sy + 0.15, w: 1.1, h: sh - 0.3, fill: { color: THEME.colors.dk2 }, line: { color: THEME.colors.dk2 }, objectName: "feed panel" });
-  s.addText("SIGNAL FEED\n\n12:04 sonar ping\n12:04 sensor 7\n12:05 report\n12:05 public\n12:06 ping", { x: sx + 4.35, y: sy + 0.15, w: 1.1, h: sh - 0.3, fontSize: 7.5, color: "CADCFC", margin: 6, valign: "top", isTextBox: true, objectName: "feed text" });
+  const shot = "image/png;base64," + fs.readFileSync(process.env.APP_SHOT).toString("base64");
+  s.addImage({ data: shot, x: 0.6, y: 1.3, w: 5.6, h: 3.15, objectName: "app screenshot" });
+  s.addText("Hosted demo, live", { x: 0.6, y: 4.5, w: 5.6, h: 0.3, fontSize: 10, color: C.accent5, margin: 0, isTextBox: true, objectName: "shot caption" });
   // right column
   s.addText("Looks done. Does nothing.", { x: 6.5, y: 1.3, w: 3.0, h: 0.5, fontSize: 18, bold: true, color: C.text1, margin: 0, isTextBox: true, objectName: "app claim" });
   const appPts = ["Jets you scramble do not fly anywhere", "Mechs are a counter with no behaviour", "Click a kaiju and the map zooms instead of targeting", "Last Stand picks a city to save with a coin flip"];
@@ -144,13 +133,13 @@ async function icon(name, hex, px = 256) {
     ["1", art.gorathos, "Sixty-eight thousand at Lumen Field", "Gorathos  ·  11 min to the seawall", "Empty a sold-out stadium into streets that face the kaiju, or hold 68,000 people in a building never built to take a hit."],
     ["2", art.terrakon, "The bridge is floating", "Terrakon  ·  26 min to the anchor line", "Clear the I-90 span and strand Mercer Island, or keep it open and gamble 4,000 vehicles on a cable."],
     ["3", art.vespyra, "Forty aircraft on approach", "Vespyra  ·  19 min to the outer marker", "Land everything onto runways in its path, or divert forty aircraft with fuel some do not have."],
-    ["4", ic.water, "The locks", "Skarnyx  ·  no clock, that is the problem", "Raise a three-city alert on a sonar log alone, or wait for something to surface and lose the lakes."],
+    ["4", art.skarnyx, "The locks", "Skarnyx  ·  no clock, that is the problem", "Raise a three-city alert on a sonar log alone, or wait for something to surface and lose the lakes."],
   ];
   scen.forEach(([n, d, name, meta, choice], i) => {
     const col = i % 2, row = Math.floor(i / 2);
     const x = 0.6 + col * 4.5, y = 1.25 + row * 1.95, w = 4.3, h = 1.8;
     s.addShape(pres.ShapeType.roundRect, { x, y, w, h, fill: { color: THEME.colors.lt2 }, line: { color: THEME.colors.lt2 }, rectRadius: 0.08, objectName: "card " + n });
-    if (n === "4") circleIcon(s, d, x + 0.2, y + 0.2, 0.55, THEME.colors.accent2, "scen" + n); else s.addImage({ data: d, x: x + 0.15, y: y + 0.12, w: 0.68, h: 0.68, objectName: "monster " + n });
+    s.addImage({ data: d, x: x + 0.15, y: y + 0.12, w: 0.68, h: 0.68, objectName: "monster " + n });
     s.addText(name, { x: x + 0.9, y: y + 0.18, w: w - 1.05, h: 0.35, fontSize: 14, bold: true, color: C.text1, margin: 0, isTextBox: true, objectName: "scen name " + n });
     s.addText(meta, { x: x + 0.9, y: y + 0.5, w: w - 1.05, h: 0.3, fontSize: 10.5, color: C.accent1, bold: true, margin: 0, isTextBox: true, objectName: "scen meta " + n });
     s.addText(choice, { x: x + 0.2, y: y + 0.88, w: w - 0.4, h: 0.85, fontSize: 11, color: C.text1, margin: 0, isTextBox: true, objectName: "scen choice " + n });
@@ -162,7 +151,7 @@ async function icon(name, hex, px = 256) {
   s.addText("You are the incident commander", { placeholder: "title" });
   const roleRows = [
     [ic.user, "Full authority", "Airport, police, WSDOT, Titan Watch: they all answer to you. Order anything. Nobody argues."],
-    [ic.eyeslash, "No screen of your own", "You see only what the specialists report, when they report it. Nine of them have already been interviewed."],
+    [ic.eyeslash, "Your only screen is the command centre", "Everything else reaches you by report, when the specialists report it. Nine of them have already been interviewed."],
     [ic.phone, "Three phrases", "\"I do not know.\"   \"Assume and label it.\"   \"Ask the specialist, then tell me.\""],
     [ic.flag, "Graded on", "Lives first, then property. And whether every decision was a decision, recorded, with a name on it."],
   ];

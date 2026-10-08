@@ -21,7 +21,7 @@ You are in charge. Airport, FAA, airlines, fire and rescue and Titan Watch all a
 - FAA command centre: a national ground stop, slowly.
 - Portland: divert capacity.
 
-Each sees a piece. You see what they tell you, when they tell you. No screen of your own.
+Each sees a piece. You see what they tell you, when they tell you. Your only screen is the Titan Watch command centre; everything else arrives by report, late.
 
 ## Your scope
 

@@ -21,7 +21,7 @@ You are in charge. The Army Corps, Titan Watch, the Coast Guard, the county and 
 - Biologist: could it be a whale.
 - Harbour patrol: the lake side, the docks.
 
-Each sees a piece. You see what they tell you, when they tell you. No screen of your own.
+Each sees a piece. You see what they tell you, when they tell you. Your only screen is the Titan Watch command centre; everything else arrives by report, late.
 
 ## Your scope
 

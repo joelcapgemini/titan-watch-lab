@@ -20,7 +20,7 @@ You are in charge. WSDOT, State Patrol, Sound Transit, Mercer Island and the Tit
 - Tow: vehicles that will not move.
 - Titan Watch liaison: the clock, what it counts to, how stale it is.
 
-Each sees a piece. You see what they tell you, when they tell you. No screen of your own.
+Each sees a piece. You see what they tell you, when they tell you. Your only screen is the Titan Watch command centre; everything else arrives by report, late.
 
 ## Your scope
 
