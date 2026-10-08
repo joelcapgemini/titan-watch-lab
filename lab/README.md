@@ -72,7 +72,7 @@ Each pack ends with a run sheet: every command and prompt for that scenario, in 
 
 ## 4. Lab 2: Security and Responsible AI
 
-Two agents, two terminals, at the same time. Before either, write three security findings you predict. Paper.
+Two agents, two Claude Code sessions in the same folder, at the same time. They write to different folders and never read each other. Keep the two windows side by side, not tabbed, or you will approve the wrong prompt. One screen and it feels messy: run security first, then RAI; it still fits. Before either, write three security findings you predict. Paper.
 
 ### Security planner
 
