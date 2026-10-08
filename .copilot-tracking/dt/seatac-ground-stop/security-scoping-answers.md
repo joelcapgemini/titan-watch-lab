@@ -17,7 +17,7 @@ Pre-seeded answers for the security planner so it does not spend turns asking. E
 
 ## How to use
 
-Prompt for the planner, after `/hve-core:security-plan-from-prd`:
+Prompt for the planner, after `/hve-core:security-planner`:
 
 ```
 Use the security planner to plan the production security for this solution.

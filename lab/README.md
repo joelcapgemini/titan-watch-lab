@@ -73,7 +73,7 @@ role-play.
 
 **Everyone, first.** Write three security findings you predict the planner will raise. Paper. Keep it.
 
-**Security driver.** `/clear`, then `/hve-core:security-plan-from-prd`, then:
+**Security driver.** `/clear`, then `/hve-core:security-planner`, then:
 
 ```
 Use the security planner to plan the production security for this solution.
@@ -87,7 +87,7 @@ Commit only, never push.
 
 Approve prompts as they come. Allowed: it answers its own scoping. Not allowed: "assume I confirm everything". When done, ask for the plan summary by severity, counts per level, Critical items one line each, and its recommended next planner. Compare the Critical list with the paper predictions.
 
-**RAI driver.** `/clear`, then `/hve-core:rai-capture`, then:
+**RAI driver.** `/clear`, then `/hve-core:rai-planner-agent`, then:
 
 ```
 Run an RAI assessment on the single-save decision: the disaster-recovery AI in
