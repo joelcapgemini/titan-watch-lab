@@ -21,7 +21,7 @@ The coach interviews you against this, narrows it to this clock and this landmar
 
 ## Who reports to you
 
-Nine specialists have already been interviewed. Their interviews are in `.copilot-tracking/dt/seatac-ground-stop/`. Do not read them. The coach has, and will quiz you on what they said.
+Ten specialists have already been interviewed. Their interviews are in `.copilot-tracking/dt/seatac-ground-stop/`. Do not read them. The coach has, and will quiz you on what they said.
 
 | Reports to you | What they own | What they keep saying |
 |----------------|---------------|-----------------------|
@@ -37,6 +37,6 @@ Nine specialists have already been interviewed. Their interviews are in `.copilo
 
 ## Already done, do not redo
 
-Scope, stakeholder map, assumptions log, world rules, nine interviews, security scoping answers. All under `.copilot-tracking/dt/seatac-ground-stop/`. The coach reads them.
+Scope, stakeholder map, assumptions log, world rules, ten interviews, security scoping answers. All under `.copilot-tracking/dt/seatac-ground-stop/`. The coach reads them.
 
 **Out of scope for everyone:** engaging Vespyra, terminal evacuation, anything after it passes.

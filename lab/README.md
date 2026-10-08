@@ -2,6 +2,13 @@
 
 Same steps for every scenario. One repo holds all four scenarios, pre-seeded under `.copilot-tracking/dt/<slug>/`. You pick one scenario pack; it has the kaiju facts, your card, what you are graded on, and the slug. Where this document says `<slug>`, use the one from your pack.
 
+| Scenario | Kaiju | Clock | Slug | Pack |
+|----------|-------|-------|------|------|
+| 1 Sixty-eight thousand at Lumen Field | Gorathos | 11 min to the seawall | `lumen-field-evac` | `lab/scenarios/lumen-field/` |
+| 2 The bridge is floating | Terrakon | 26 min to the anchor line | `i90-span-clear` | `lab/scenarios/i90-bridge/` |
+| 3 Forty aircraft on approach | Vespyra | 19 min to the outer marker | `seatac-ground-stop` | `lab/scenarios/seatac/` |
+| 4 The locks | Skarnyx | No clock; that is the problem | `ballard-locks-alert` | `lab/scenarios/ballard-locks/` |
+
 Individual work. Three sections, about 25, 20 and 25 minutes. You touch discovery, security, Responsible AI and the research-plan-implement loop. You finish none of them. That is the point.
 
 You play one role in every scenario: the incident commander. Everyone else has already been interviewed. The coach has read those interviews and will quiz you on them.
@@ -66,7 +73,7 @@ On the day, before typing:
 
 **Goal.** One interview, you as incident commander, against the fixed outcome. Then one synthesis that produces a PRD, a technology-neutral diagram and an Azure overlay.
 
-**Interview.** `/clear`, then `/hve-core:dt-coach`, then paste the prompt on your card. The coach reads the shared scope and the nine specialist interviews, then asks you five questions built on what the specialists said. Answer as the commander: you see only what they report, you decide, they act. Outside your card's scope, say "I do not know" or "that is not my call, ask the specialist". For fictional detail, "assume and label it". When the coach writes your interview file, read it once. Commit.
+**Interview.** `/clear`, then `/hve-core:dt-coach`, then paste the prompt on your card. The coach reads the shared scope and the pre-seeded specialist interviews, then asks you five questions built on what the specialists said. Answer as the commander: you see only what they report, you decide, they act. Outside your card's scope, say "I do not know" or "that is not my call, ask the specialist". For fictional detail, "assume and label it". When the coach writes your interview file, read it once. Commit.
 
 **Synthesis.** Same session, paste:
 
