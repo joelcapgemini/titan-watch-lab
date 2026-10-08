@@ -58,7 +58,7 @@ Each pack ends with a run sheet: every command and prompt for that scenario, in 
 
 1. The coach lists the projects it can resume. Pick your scenario, say you are the incident commander. It asks five questions built on what the specialists said.
 2. Answer as the commander. You see only what they report. Outside your card's scope: "I do not know", "that is not my call, ask the specialist", or "assume and label it".
-3. The coach writes `interview-commander-roleplay.md` in a `-commander` folder beside it. Read it once.
+3. The coach writes `interview-commander.md` in a `-commander` folder beside it. Read it once.
 4. Paste run sheet step 3. The coach restates the outcome, synthesises, drafts a PRD, a diagram and an Azure overlay, without stopping. About 10 to 15 minutes.
 5. Write down one question the coach asked that you did not expect.
 

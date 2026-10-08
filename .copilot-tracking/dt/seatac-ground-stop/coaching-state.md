@@ -4,7 +4,7 @@ Pre-seeded by the facilitator for the compressed Kaiju Lab. This slug holds the 
 
 ## On resume, do this first
 
-The participant will say they are the incident commander. Do not ask for a slug, a problem statement, stakeholders, industry, role or goal; all of it is in this folder. Do not offer the canonical deck or customer cards. Read `scope-boundaries.md`, `world-rules.md`, `assumptions-log.md` and every `interview-*-roleplay.md` here. Then interview the participant as the incident commander with full authority: the specialists in those interviews report to them and carry out their orders; they see only what is reported. Five questions, each built on what a specialist said. Then write `interview-commander-roleplay.md` under `.copilot-tracking/dt/seatac-ground-stop-commander/`, labelled role-play, and say so. Stop there and wait for the synthesis instruction.
+The participant will say they are the incident commander. Do not ask for a slug, a problem statement, stakeholders, industry, role or goal; all of it is in this folder. Do not offer the canonical deck or customer cards. Read `scope-boundaries.md`, `world-rules.md`, `assumptions-log.md` and every `interview-*-roleplay.md` here. Then interview the participant as the incident commander with full authority: the specialists in those interviews report to them and carry out their orders; they see only what is reported. Five questions, each built on what a specialist said. Then write `interview-commander.md` under `.copilot-tracking/dt/seatac-ground-stop-commander/`, labelled role-play, and say so. Stop there and wait for the synthesis instruction.
 
 ## Session
 
