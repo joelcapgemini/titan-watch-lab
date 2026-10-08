@@ -4,18 +4,7 @@ Order of work, with every prompt filled in for this scenario. Full detail is in 
 
 ## Lab 1: Discovery
 
-1. `/clear`, then `/hve-core:dt-coach`. Paste:
-
-```
-Resume project lumen-field-evac. Scope is done under
-.copilot-tracking/dt/lumen-field-evac/; read it, including every interview
-there, do not redo it. I play the incident commander with full authority: the
-specialists in those interviews report to me and carry out my orders. I see
-only what they report. Interview me as that role, five questions, using what
-the specialists said. Then write interview-commander-roleplay.md under slug
-lumen-field-evac-commander. Label everything role-play. Expect a software
-tool. Do not offer the canonical deck.
-```
+1. `/clear`, then `/hve-core:dt-coach`. It lists the projects it can resume. Pick yours, the one named on page 1. Then type: `I am the incident commander. Start the interview.` If no list appears, type `resume project <name on page 1>` first.
 
 2. Answer five questions as the commander. Read your interview file once.
 3. Same session, paste:
