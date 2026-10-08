@@ -9,7 +9,7 @@
 - **A return is not a sighting.** Whale, submarine or Skarnyx; nobody can tell from one, or say how sure they are.
 - **Who sees it.** Titan Watch sees a return, sometimes. The lockmaster sees gate strain. The Coast Guard sees the surface. Nobody sees all three. That gap is the scenario.
 
-Seattle, Kirkland and Bellevue share the lake shoreline. Alert all three on a sonar log alone, or wait for something to surface and lose the lakes.
+Seattle, Kirkland and Bellevue share the lake shoreline. Alert all three on a sonar log alone, or wait for something to surface and lose the lakes. **Your job:** get enough evidence fast enough to pick the smallest response that works, from closing the gates up to a three-city alert, and record why.
 
 ## Outcome, same for every scenario
 
