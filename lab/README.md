@@ -35,14 +35,14 @@ Open the local URL. Four kaiju on the map, six on the roster. Stop the dev serve
 
 ## 2. Pick a scenario
 
-One scenario, one role: the incident commander, full authority. Everyone else has been interviewed already. Read the two-page pack for your scenario and nothing else.
+One scenario, one role: the incident commander, full authority. Everyone else has been interviewed already. Every handout is in the `handouts/` folder at the top of the repo. Read your scenario pack and nothing else.
 
 | Scenario | Clock | Pack |
 |----------|-------|------|
-| 1 Sixty-eight thousand at Lumen Field. Gorathos is coming ashore; empty the stadium or hold it | 11 min | `lab/scenarios/lumen-field/` |
-| 2 The bridge is floating. Terrakon is heading for Mercer Island; clear the I-90 span or keep it open | 26 min | `lab/scenarios/i90-bridge/` |
-| 3 Forty aircraft on approach. Vespyra crosses the Sea-Tac corridor; land them or divert them | 19 min | `lab/scenarios/seatac/` |
-| 4 The locks. Skarnyx may be under the Ballard Locks; alert three cities on sonar alone, or wait | none | `lab/scenarios/ballard-locks/` |
+| 1 Sixty-eight thousand at Lumen Field. Gorathos is coming ashore; empty the stadium or hold it | 11 min | `handouts/01-lumen-field-scenario-pack.pdf` |
+| 2 The bridge is floating. Terrakon is heading for Mercer Island; clear the I-90 span or keep it open | 26 min | `handouts/02-i90-bridge-scenario-pack.pdf` |
+| 3 Forty aircraft on approach. Vespyra crosses the Sea-Tac corridor; land them or divert them | 19 min | `handouts/03-seatac-scenario-pack.pdf` |
+| 4 The locks. Skarnyx may be under the Ballard Locks; alert three cities on sonar alone, or wait | none | `handouts/04-ballard-locks-scenario-pack.pdf` |
 
 Each pack ends with a run sheet: every command and prompt for that scenario, in order, already filled in. The labs below say what each step does; the run sheet says what to type.
 
