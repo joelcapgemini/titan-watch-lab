@@ -38,7 +38,9 @@ On the day, before typing:
 
 # Section 1: Discovery
 
-**Goal.** One role-play interview per person, merged into one folder. Then one synthesis that produces a PRD, a technology-neutral diagram and an Azure overlay.
+**Goal.** One outcome for the team. One role-play interview per person against it, merged into one folder. Then one synthesis that produces a PRD, a technology-neutral diagram and an Azure overlay.
+
+**Team, first two minutes.** Page 1 of your pack offers three outcomes: heroic, pragmatic, grim. Pick one, or write your own if it still implies software. An outcome that is really a solution gets sent back. Lead writes it into `.copilot-tracking/dt/<slug>/scope-boundaries.md` under "Outcome", commits, pushes to `team/<cohort>`. Everyone pulls.
 
 **Everyone.** `/clear`, then `/hve-core:dt-coach`, then paste the prompt on your card. The coach reads the shared scope and asks five questions. Answer from inside your card's "can see" window and "your scope". Outside them, say "I do not know" or "that is not my call, ask X". For fictional detail, "assume and label it". When the coach writes your interview file, read it once.
 

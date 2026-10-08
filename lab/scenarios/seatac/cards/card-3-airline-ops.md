@@ -4,7 +4,7 @@
 
 **Your duty on this card:** RAI driver. In section 2 you run the Responsible AI planner in a second terminal.
 
-**Outcome you are judged on:** every aircraft on the ground somewhere before Vespyra crosses the outer marker.
+**Outcome you are judged on:** the one your team chose on page 1. It is in `scope-boundaries.md`. Pull before you start.
 
 **Slug:** `seatac-ground-stop-airline-ops`
 

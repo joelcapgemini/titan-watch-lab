@@ -8,7 +8,13 @@ Vespyra will cross the Sea-Tac approach corridor in 19 minutes. Forty aircraft a
 
 ## Outcome
 
-Every aircraft on the ground somewhere before Vespyra crosses the outer marker. "Somewhere" includes Sea-Tac, a divert field, or a controlled off-field landing. It does not include "still airborne and hoping".
+TEAM FILLS THIS IN before interviews start. Pick one tier from the scenario pack, or write your own. The coach interviews every role against this line.
+
+- Heroic: all forty on the ground, nobody hurt, no runway lost.
+- Pragmatic: every aircraft on the ground somewhere before the outer marker; wrong airport or off-field counts.
+- Grim: you cannot save all forty; decide which you lose, and make it a recorded decision, not an accident.
+
+Chosen outcome: _(lead writes it here, one sentence)_
 
 ## In scope
 

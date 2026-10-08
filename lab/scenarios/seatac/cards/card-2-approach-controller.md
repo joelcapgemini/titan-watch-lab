@@ -4,7 +4,7 @@
 
 **Your duty on this card:** security driver. In section 2 you run the security planner.
 
-**Outcome you are judged on:** every aircraft on the ground somewhere before Vespyra crosses the outer marker.
+**Outcome you are judged on:** the one your team chose on page 1. It is in `scope-boundaries.md`. Pull before you start.
 
 **Slug:** `seatac-ground-stop-approach-controller`
 

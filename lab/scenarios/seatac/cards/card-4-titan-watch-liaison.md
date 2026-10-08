@@ -4,7 +4,7 @@
 
 **Your duty on this card:** reviewer. Read files as they land, record gaps. In section 3 you read the plan aloud.
 
-**Outcome you are judged on:** every aircraft on the ground somewhere before Vespyra crosses the outer marker.
+**Outcome you are judged on:** the one your team chose on page 1. It is in `scope-boundaries.md`. Pull before you start.
 
 **Slug:** `seatac-ground-stop-titan-watch-liaison`
 

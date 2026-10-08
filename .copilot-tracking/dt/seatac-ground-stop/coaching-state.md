@@ -6,7 +6,7 @@ Pre-seeded by the facilitator for the compressed Kaiju Lab. This slug holds the 
 
 - Project slug: `seatac-ground-stop`
 - Scenario: card 3, forty aircraft on approach, Vespyra, Sea-Tac
-- Outcome: every aircraft on the ground somewhere before Vespyra crosses the outer marker
+- Outcome: chosen by the team before interviews; read it from scope-boundaries.md and interview every role against it
 - Software expected: yes, which part of the chain is open (H1)
 - Canonical deck: declined, do not offer
 - Customer cards: declined

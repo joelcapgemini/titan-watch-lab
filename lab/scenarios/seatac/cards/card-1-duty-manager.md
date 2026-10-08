@@ -4,7 +4,7 @@
 
 **Your duty on this card:** lead. You merge the pull requests, run the synthesis, and drive the RPI session.
 
-**Outcome you are judged on:** every aircraft on the ground somewhere before Vespyra crosses the outer marker.
+**Outcome you are judged on:** the one your team chose on page 1. It is in `scope-boundaries.md`. Pull before you start.
 
 **Slug:** `seatac-ground-stop-duty-manager`
 
