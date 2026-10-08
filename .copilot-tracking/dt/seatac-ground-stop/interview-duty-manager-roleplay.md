@@ -1,6 +1,6 @@
 # Interview: airport duty manager, Port of Seattle
 
-Label: role-play, not evidence. Fallback file, used when card 1 is unassigned. Copy this folder into `.copilot-tracking/dt/` before synthesis.
+Label: role-play, not evidence. Pre-seeded by the facilitator. Method 1b.
 
 ## Can see
 

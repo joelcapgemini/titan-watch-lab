@@ -1,6 +1,6 @@
 # Interview: airline operations controller
 
-Label: role-play, not evidence. Fallback file, used when card 3 is unassigned. Copy this folder into `.copilot-tracking/dt/` before synthesis.
+Label: role-play, not evidence. Pre-seeded by the facilitator. Method 1b.
 
 ## Can see
 

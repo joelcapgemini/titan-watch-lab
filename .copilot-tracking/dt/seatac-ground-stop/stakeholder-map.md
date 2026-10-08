@@ -1,19 +1,21 @@
 # Stakeholder map: seatac-ground-stop
 
-Pre-seeded. Four roles marked INTERVIEW are the participant role cards. Three marked DONE have pre-seeded role-play interviews in this folder.
+Pre-seeded. Nine roles marked DONE have role-play interviews in this folder. The participant plays the incident commander, marked INTERVIEW.
 
 | Stakeholder | Feels the problem how | Controls | Status |
 |-------------|----------------------|----------|--------|
 | Pilots and passengers on the 40 aircraft | Most directly, least information | Their own aircraft only | Not interviewed; voiced through others |
-| TRACON approach controller | Sequences every aircraft, cannot see fuel | Headings, altitudes, sequencing, go-arounds | INTERVIEW, card 2 |
-| Airport duty manager, Port of Seattle | Owns the runways and ground, must receive whatever lands | Runway closure, ground crews, gates | INTERVIEW, card 1, lead |
-| Airline operations controller | Knows fuel and crew limits, no view of the sky | Diversion decisions for their fleet | INTERVIEW, card 3 |
-| Titan Watch liaison at Sea-Tac | Owns the clock, has no aviation authority | Track estimate, alert timing | INTERVIEW, card 4 |
+| TRACON approach controller | Sequences every aircraft, cannot see fuel | Headings, altitudes, sequencing, go-arounds | DONE |
+| Airport duty manager, Port of Seattle | Owns the runways and ground, must receive whatever lands | Runway closure, ground crews, gates | DONE |
+| Airline operations controller | Knows fuel and crew limits, no view of the sky | Diversion decisions for their fleet | DONE |
+| Titan Watch liaison at Sea-Tac | Owns the clock, has no aviation authority | Track estimate, alert timing | DONE |
 | FAA tower supervisor | Issues clearances to land, last voice to every cockpit | Landing clearance, runway assignment | DONE |
 | Airport fire and rescue chief | Receives whatever goes wrong on the ground | Crash response positioning | DONE |
 | Titan Watch duty analyst | Produces the 19-minute estimate | Sensor grid, track model | DONE |
-| Divert field operators (Paine, Boeing Field, Portland) | Receive aircraft they did not plan for | Their own runway capacity | Assumed, not interviewed |
-| FAA command centre | National ground stop authority | Ground stop orders | Assumed, not interviewed |
+| Portland divert field operations | Receive aircraft they did not plan for | Their own gate capacity | DONE |
+| FAA command centre | National ground stop authority | Ground stop orders | DONE |
+| Captain on final | 162 people, 40 minutes of fuel, no information | One aircraft | DONE |
+| Incident commander | Owns the call nobody else owns, sees only reports | Ground stop, land versus divert, when to start choosing | INTERVIEW, the participant |
 | Weather service | Vespyra rides their fronts | Forecast only | Assumed |
 | Public and media | Learn of it when aircraft divert | Nothing | Assumed |
 
