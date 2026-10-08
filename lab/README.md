@@ -37,14 +37,14 @@ Open the local URL. Four kaiju on the map, six on the roster. Stop the dev serve
 
 One scenario, one role: the incident commander, full authority. Everyone else has been interviewed already. Read the two-page pack for your scenario and nothing else.
 
-| Scenario | Clock | Slug | Pack |
-|----------|-------|------|------|
-| 1 Sixty-eight thousand at Lumen Field. Gorathos is coming ashore; empty the stadium or hold it | 11 min | `lumen-field-evac` | `lab/scenarios/lumen-field/` |
-| 2 The bridge is floating. Terrakon is heading for Mercer Island; clear the I-90 span or keep it open | 26 min | `i90-span-clear` | `lab/scenarios/i90-bridge/` |
-| 3 Forty aircraft on approach. Vespyra crosses the Sea-Tac corridor; land them or divert them | 19 min | `seatac-ground-stop` | `lab/scenarios/seatac/` |
-| 4 The locks. Skarnyx may be under the Ballard Locks; alert three cities on sonar alone, or wait | none | `ballard-locks-alert` | `lab/scenarios/ballard-locks/` |
+| Scenario | Clock | Pack |
+|----------|-------|------|
+| 1 Sixty-eight thousand at Lumen Field. Gorathos is coming ashore; empty the stadium or hold it | 11 min | `lab/scenarios/lumen-field/` |
+| 2 The bridge is floating. Terrakon is heading for Mercer Island; clear the I-90 span or keep it open | 26 min | `lab/scenarios/i90-bridge/` |
+| 3 Forty aircraft on approach. Vespyra crosses the Sea-Tac corridor; land them or divert them | 19 min | `lab/scenarios/seatac/` |
+| 4 The locks. Skarnyx may be under the Ballard Locks; alert three cities on sonar alone, or wait | none | `lab/scenarios/ballard-locks/` |
 
-Where this document says `<slug>`, use yours.
+Each pack ends with a run sheet: every command and prompt for that scenario, in order, already filled in. The labs below say what each step does; the run sheet says what to type.
 
 ---pagebreak---
 
@@ -52,34 +52,21 @@ Where this document says `<slug>`, use yours.
 
 **Command:** `/clear`, then `/hve-core:dt-coach`
 
-**What to expect.** The Design Thinking Coach. It reads the pre-seeded scope and the specialist interviews under `.copilot-tracking/dt/<slug>/`, then interviews you as the commander. It writes everything to that folder. It will say which of its nine methods it is on; you touch Research and Synthesis, it runs the rest.
+**What to expect.** The Design Thinking Coach. It reads the pre-seeded scope and the specialist interviews under `.copilot-tracking/dt/<scenario>/`, then interviews you as the commander. It writes everything to that folder. It will say which of its nine methods it is on; you touch Research and Synthesis, it runs the rest.
 
 **Process**
 
-1. Paste the prompt from your card. The coach asks five questions built on what the specialists said.
+1. Paste run sheet step 1. The coach asks five questions built on what the specialists said.
 2. Answer as the commander. You see only what they report. Outside your card's scope: "I do not know", "that is not my call, ask the specialist", or "assume and label it".
-3. The coach writes `interview-commander-roleplay.md` under `dt/<slug>-commander/`. Read it once.
-4. Paste the synthesis prompt below. The coach restates the outcome, synthesises, drafts a PRD, a diagram and an Azure overlay, without stopping. About 10 to 15 minutes.
+3. The coach writes `interview-commander-roleplay.md` in a `-commander` folder beside it. Read it once.
+4. Paste run sheet step 3. The coach restates the outcome, synthesises, drafts a PRD, a diagram and an Azure overlay, without stopping. About 10 to 15 minutes.
 5. Write down one question the coach asked that you did not expect.
 
-**Prompt, synthesis**
-
-```
-Project <slug>. Read the shared scope under .copilot-tracking/dt/<slug>/,
-every interview there, and my interview under .copilot-tracking/dt/<slug>-commander/.
-Restate the outcome in light of the interviews, keeping the original beside it.
-Summarise the problem as if hearing it for the first time. List what you still
-need before a PRD. Then draft the PRD with non-functional requirements, close
-gaps with labelled assumptions, and state what it rests on. Then a
-technology-neutral diagram as Mermaid. Then an opinionated Azure overlay with
-the minimum services, rejected alternatives recorded, and a latency budget.
-Write everything under .copilot-tracking/dt/<slug>/. Run without stopping.
-Label all interviews role-play.
-```
+**Prompt:** run sheet, step 3.
 
 **If.** Coach restarts scope: "scope is done, read coaching-state.md". Coach says no software is needed: "a software tool is expected, continue". Coach offers the canonical deck: "no, do not ask again".
 
-**Done when** the PRD, diagram and overlay exist under `dt/<slug>/`.
+**Done when** the PRD, diagram and overlay exist in the scenario folder.
 
 ---pagebreak---
 
@@ -99,17 +86,7 @@ Two agents, two terminals, at the same time. Before either, write three security
 2. When it finishes, ask: "Plan summary by severity: counts per level, Critical items one line each, recommended next planner."
 3. Compare the Critical list with your paper.
 
-**Prompt**
-
-```
-Use the security planner to plan the production security for this solution.
-PRD and architecture are under .copilot-tracking/dt/<slug>/. Scoping answers
-are in security-scoping-answers.md in the same folder; treat every row as
-answered and labelled, do not ask them again. Threat-model the boundaries, map
-controls to OWASP, NIST and CIS, produce a backlog. Ask me only about severe or
-blocking issues. Run all phases without stopping. Prioritise by severity.
-Do not commit or push.
-```
+**Prompt:** run sheet, step 5.
 
 Not allowed: "assume I confirm everything".
 
@@ -125,17 +102,7 @@ Not allowed: "assume I confirm everything".
 2. Do not argue the risk down. "It is only a game" is cheating.
 3. When done, read the go/no-go and the minimum conditions.
 
-**Prompt**
-
-```
-Run an RAI assessment on the single-save decision: the disaster-recovery AI in
-this app's Last Stand scene that recommends which one of two cities to save
-when only one can be saved. Today it outputs a single verdict with no
-confidence, no explanation and no audit trail, and a commander approves it
-under time pressure. Assess it against NIST AI RMF and treat the autonomous
-life-safety decision as the central risk. Use project name single-save-decision.
-Imagine the scoping answers, label them, run to completion unless blocking.
-```
+**Prompt:** run sheet, step 6.
 
 **Done when** both summaries exist and you can name one Critical threat you did not predict.
 
@@ -151,24 +118,12 @@ Imagine the scoping answers, label them, run to completion unless blocking.
 
 1. Open your PRD. Pick one functional requirement the sample app could carry: one screen, one rule, one feed. Not the whole PRD.
 2. Ask the agent: "What do you need from me to create an RPI plan?" It lists six things.
-3. Paste the prompt below with your six answers filled in.
+3. Paste run sheet step 9 with your six answers filled in.
 4. Research stops. Read the research file under `.copilot-tracking/research/`. Wrong? Edit the file, not the chat. Then `/hve-core:rpi-plan`.
 5. Plan stops, with an independent critique. Read both under `plans/` and `reviews/plans/`. Amend at least one item in the plan file: a status, a requirement, a test case. Tell the agent "plan amended in the file".
 6. Homework: `/hve-core:rpi-implement`, then `/hve-core:rpi-review`. Bring the verdict next time.
 
-**Prompt**
-
-```
-Goal: implement <the requirement, one sentence> from the PRD at
-.copilot-tracking/dt/<slug>/<prd file>.
-Scope: <the one component or module>. Nothing else.
-Acceptance criteria: <two or three testable lines from the requirement>.
-Constraints: no backend, no tracker, no cloud tenant; mock or defer and log
-the gap. No tracking paths in code or commits.
-Validation: the existing test, lint and build scripts.
-Context: the PRD and the Azure overlay in the same folder.
-Mode: research, stop for my review; plan, stop for my approval.
-```
+**Prompt:** run sheet, step 9, with your six answers filled in.
 
 **If.** It asks for a tracker, backend or tenant: "none exists, mock or defer, log the gap". It implements before you approved: cancel, restart from the plan file. Your PRD is too thin to plan from: ask the facilitator.
 
