@@ -15,13 +15,13 @@ Pre-seeded. Nine roles marked DONE have role-play interviews in this folder. The
 | Portland divert field operations | Receive aircraft they did not plan for | Their own gate capacity | DONE |
 | FAA command centre | National ground stop authority | Ground stop orders | DONE |
 | Captain on final | 162 people, 40 minutes of fuel, no information | One aircraft | DONE |
-| Incident commander | Owns the call nobody else owns, sees only reports | Ground stop, land versus divert, when to start choosing | INTERVIEW, the participant |
+| Incident commander | Full authority, sees only reports | Everything: ground stop, land versus divert, runways, crews | INTERVIEW, the participant |
 | Weather service | Vespyra rides their fronts | Forecast only | Assumed |
 | Public and media | Learn of it when aircraft divert | Nothing | Assumed |
 
 ## Who decides, who acts, who is told
 
-- Decides: open. Q1.
+- Decides: the incident commander, full authority by scenario rule.
 - Acts: tower (clearances), TRACON (sequencing), airline ops (diversions), duty manager (runways).
 - Told: pilots, divert fields, fire and rescue, public.
 

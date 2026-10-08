@@ -1,6 +1,6 @@
 # Scenario 3: Forty aircraft on approach
 
-**Slug:** `seatac-ground-stop` - **Repo:** github.com/joelcapgemini/titan-watch-seatac - **Your role:** incident commander, next page
+**Slug:** `seatac-ground-stop` - **Repo:** github.com/joelcapgemini/titan-watch-seatac - **Your role:** incident commander, full authority, next page
 
 ## The kaiju, in thirty seconds
 

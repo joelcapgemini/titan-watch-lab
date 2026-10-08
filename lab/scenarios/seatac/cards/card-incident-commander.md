@@ -8,7 +8,7 @@
 
 ## Who you are
 
-Every specialist reports to you; nobody formally appointed you. You make the call none of them owns. You decide. They act.
+You are in charge. Airport, FAA, airlines, fire and rescue and Titan Watch all answer to you for the next 19 minutes. You can order a ground stop, close a runway, divert any aircraft, hold any aircraft, send any crew anywhere. Nobody will argue. The only things you do not control are Vespyra and the clock.
 
 ## Who you can call, and for what
 
@@ -21,29 +21,27 @@ Every specialist reports to you; nobody formally appointed you. You make the cal
 - FAA command centre: a national ground stop, slowly.
 - Portland: divert capacity.
 
-Each sees a piece. You see what they tell you, when they tell you.
-
-**You cannot see:** any screen of your own, or anything not yet reported.
+Each sees a piece. You see what they tell you, when they tell you. No screen of your own.
 
 ## Your scope
 
-In scope, you decide:
-- Whether to order a ground stop, and when.
-- Which aircraft land here and which go elsewhere, when the specialists disagree.
-- When to stop trying to save everything and start choosing.
+In scope, you decide and order:
+- Ground stop, yes or no, and when.
+- Which aircraft land here, which divert where, which hold.
+- Runway use, crew staging, when to stop saving everything and start choosing.
 
-Out of scope, you hand off:
-- How a runway is cleared, how an aircraft is sequenced, which captain is called. The specialists.
-- Where Vespyra is. Titan Watch.
+Out of scope:
+- How a specialist carries out your order. They know their job.
+- Where Vespyra is or goes. Titan Watch reports it; nobody controls it.
 
 ## Anchors, fixed
 
-- Nobody has written down that you have this authority. Three agencies each think the call is theirs.
-- Every report reaches you through at least one other person, late.
+- Every order you give takes minutes to reach the people who act on it, and every report reaches you late.
+- No one has ever run this against a clock shorter than an hour.
 
 ## Three phrases
 
-"I do not know." - "Assume and label it." - "That is not my call. Ask the specialist."
+"I do not know." - "Assume and label it." - "Ask the specialist, then tell me."
 
 ## Your prompt
 
@@ -52,10 +50,10 @@ Out of scope, you hand off:
 ```
 Resume project seatac-ground-stop. Scope is done under
 .copilot-tracking/dt/seatac-ground-stop/; read it, including every interview
-there, do not redo it. I play the incident commander: the specialists in those
-interviews report to me, I see only what they report, I decide and they act.
-Interview me as that role, five questions, using what the specialists said.
-Then write interview-commander-roleplay.md under slug
+there, do not redo it. I play the incident commander with full authority: the
+specialists in those interviews report to me and carry out my orders. I see
+only what they report. Interview me as that role, five questions, using what
+the specialists said. Then write interview-commander-roleplay.md under slug
 seatac-ground-stop-commander. Label everything role-play. Expect a software
 tool. Do not offer the canonical deck.
 ```

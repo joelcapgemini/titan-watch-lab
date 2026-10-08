@@ -16,7 +16,7 @@ Pre-seeded. Participants add to this through their own interviews; the coach wil
 
 | ID | Question | Owner | Status |
 |----|----------|-------|--------|
-| Q1 | Who orders the ground stop and diversions under a kaiju threat? | Unknown; three candidates | Open, do not resolve by assumption |
+| Q1 | How long from the commander's order to each specialist acting on it, and from each specialist's report to the commander hearing it? | Commander, every specialist | Open; the commander has full authority by scenario rule, so the gap is time and information, not ownership |
 | Q2 | What does "outer marker" mean as a risk point? | Titan Watch liaison and tower | Open |
 | Q3 | Where does the tool stop caring? | Lead | Open |
 | Q4 | How many aircraft can Sea-Tac land in 15 minutes on three runways with the ground side ready? | Duty manager | Open |

@@ -34,11 +34,11 @@ Restated outcome, after synthesis: _(coach writes it here; the line above stays)
 | 40 aircraft | Frozen | Scenario card |
 | "Outer marker" as the deadline point | Fluid | Open question Q2 |
 | Divert fields available | Fluid | Depends on weather and Vespyra's path |
-| Who issues the ground stop | Fluid | Open question Q1 |
+| Who decides | Frozen | The incident commander, full authority, by scenario rule |
 | Software as part of the answer | Fluid | Hypothesis H1, to be tested |
 
 ## Boundary questions to revisit
 
-- Q1: Who has authority to order a ground stop and divert under a kaiju threat? FAA, the airport, Titan Watch, or an incident commander?
+- Q1: How long does an order take to reach the people who act, and a report to reach the commander? The commander has full authority; the gap is lag and information.
 - Q2: Does "outer marker" mean aircraft on final are at risk, or the field is?
 - Q3: What does the tool stop caring about once an aircraft is "on the ground somewhere"?

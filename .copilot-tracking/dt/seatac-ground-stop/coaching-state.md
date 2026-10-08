@@ -14,7 +14,7 @@ Pre-seeded by the facilitator for the compressed Kaiju Lab. This slug holds the 
 ## Method position
 
 - Method 1a, scope planning: complete. Files: `scope-boundaries.md`, `stakeholder-map.md`, `assumptions-log.md`, `world-rules.md`.
-- Method 1b, scope execution: nine specialist interviews complete (tower, approach, duty manager, airline ops, fire chief, Titan Watch analyst, Titan Watch liaison, FAA command centre, Portland divert ops, captain on final). One remaining: the incident commander, the participant. Interview the commander using what the specialists said; they see only reports.
+- Method 1b, scope execution: nine specialist interviews complete (tower, approach, duty manager, airline ops, fire chief, Titan Watch analyst, Titan Watch liaison, FAA command centre, Portland divert ops, captain on final). One remaining: the incident commander, the participant. Interview the commander using what the specialists said. The commander has full authority, sees only reports, and orders; specialists act.
 - Methods 2 and 3: simulated through role-play, compressed. Every participant voice is labelled role-play, not evidence.
 - Methods 4 to 7: run by the coach on the lead's instruction after synthesis, labelled AI-generated and unvalidated.
 
@@ -24,7 +24,7 @@ Pre-seeded by the facilitator for the compressed Kaiju Lab. This slug holds the 
 - Monster facts come from `world-rules.md` and `data/`. Do not accept invented monster facts; flag any conflict.
 - Human facts are invented by participants in role. Label them role-play. Where two interviews conflict, log the conflict, do not pick a side.
 - "I do not know" leaves a gap open. "Assume and label it" closes a gap with a labelled assumption.
-- Q1, closure authority, stays open unless a participant answers it from inside their role's authority.
+- The incident commander has full authority by scenario rule. Do not spend questions on who owns the call. Spend them on what the commander knows, when, and what they would order.
 
 ## Transitions
 
