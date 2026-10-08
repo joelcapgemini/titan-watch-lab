@@ -150,7 +150,7 @@ def cover(title, subtitle, bullets):
     s.append(Paragraph("Contents", H2))
     s.append(ListFlowable([ListItem(Paragraph(b, BODY), leftIndent=14) for b in bullets], bulletType="bullet", leftIndent=16))
     s.append(Spacer(1, 20))
-    s.append(Paragraph("Derived from The Kaiju Lab v1.0 (Sumer Verma, 7 October 2026). Capgemini internal. The sample application is MIT licensed; the scenario is fiction and contains no client material.", NOTE))
+    s.append(Paragraph("Derived from The Kaiju Lab v1.0 (Sumer Verma, 7 October 2026). The sample application is MIT licensed; the scenario is fiction and contains no client material.", NOTE))
     s.append(PageBreak())
     return s
 
@@ -162,7 +162,7 @@ if MODE == "instructions":
         ["1. Setup: what you need, the repository, download, before typing", "2. Pick a scenario", "3. Lab 1: Discovery with the Design Thinking Coach", "4. Lab 2: Security planner and Responsible AI planner", "5. Lab 3: Research, Plan, Implement", "6. Close"],
     )
     story += render_markdown((ROOT / "lab" / "README.md").read_text(encoding="utf-8"))
-    label = "Kaiju Lab, compressed - Shared instructions - Capgemini internal"
+    label = "Kaiju Lab, compressed - Shared instructions"
     title = "The Kaiju Lab, compressed: Shared instructions"
 else:
     folder = Path(sys.argv[4])
@@ -170,7 +170,7 @@ else:
     for p in sorted((folder / "cards").glob("card-*.md")):
         story.append(PageBreak())
         story += render_markdown(p.read_text(encoding="utf-8"))
-    label = "Kaiju Lab, compressed - Scenario pack: " + folder.name + " - Capgemini internal"
+    label = "Kaiju Lab, compressed - Scenario pack: " + folder.name + ""
     title = "The Kaiju Lab, compressed: Scenario pack " + folder.name
 
 doc = SimpleDocTemplate(str(OUT), pagesize=letter, leftMargin=0.75 * inch, rightMargin=0.75 * inch, topMargin=(0.6 if MODE == "scenario" else 0.8) * inch, bottomMargin=(0.65 if MODE == "scenario" else 0.8) * inch, title=title, author="Capgemini FDE HVE training")

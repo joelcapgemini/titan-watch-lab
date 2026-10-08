@@ -10,7 +10,7 @@ Three labs, about 25, 20 and 25 minutes. Individual work. You play the incident 
 - Node 22 and git.
 - A reasoning model, chosen by hand in Claude Code. Automatic selection gives shallow coaching.
 
-**Repository:** `joelcapgemini/titan-watch-lab`, private. Ask the facilitator for access.
+**Repository:** `joelcapgemini/titan-watch-lab`, public. No account needed to clone.
 
 **Download**
 
