@@ -6,6 +6,32 @@ Individual work. Three sections, about 25, 20 and 25 minutes. You touch discover
 
 You play one role in every scenario: the incident commander. Everyone else has already been interviewed. The coach has read those interviews and will quiz you on them.
 
+## How it fits together
+
+Three agents, in order. Each one reads what the last one wrote to `.copilot-tracking/`. Nothing carries over in chat; `/clear` between every section.
+
+| Section | Agent | Reads | Writes | You do |
+|---------|-------|-------|--------|--------|
+| 1 Discovery | `dt-coach` | Pre-seeded scope and nine interviews | Your interview, synthesis, PRD, diagram, Azure overlay under `dt/<slug>/` | Answer five questions, then one synthesis prompt |
+| 2a Security | `security-planner` | Your PRD and overlay, the scoping answers | Threat model and backlog under `security-plans/` | Predict three findings, fire it, compare |
+| 2b Responsible AI | `rai-planner-agent` | The app's Last Stand scene | Assessment and gates under `rai-plans/` | Fire it, read the verdict |
+| 3 Research, Plan | `rpi-agent` | Your PRD, one requirement | Research and plan under `research/`, `plans/` | Pick the requirement, amend the plan |
+| Homework | `rpi-implement`, `rpi-review` | The plan | Code, changes log, review | Approve edits, read the verdict |
+
+## The coach's nine methods
+
+The Design Thinking Coach works through nine methods. Folder names under `dt/<slug>/` match them. In this lab you touch 2 and 3 yourself; the coach runs 4 to 7 in one prompt and marks 6, 8 and 9 skipped.
+
+| Method | Name | Output | Here |
+|--------|------|--------|------|
+| 1 | Scope conversations | Stakeholder map, scope, assumptions | Pre-seeded |
+| 2 | Research | Interviews | Nine pre-seeded, one by you |
+| 3 | Synthesis | Themes, problem definition | Your synthesis prompt |
+| 4, 5 | Brainstorming, concepts | Ideas, three concepts, one chosen | Coach, same prompt |
+| 6 | Prototyping | Paper prototype | Skipped, labelled |
+| 7 | Design | Diagram, Azure overlay | Coach, same prompt |
+| 8, 9 | Testing, iteration | Feedback, revision | Skipped, labelled |
+
 ## Rules
 
 - Kaiju facts are fixed. Page 1 of your pack has everything you need; the coach holds the rest. Never invent them.
