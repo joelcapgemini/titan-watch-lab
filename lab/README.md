@@ -32,6 +32,7 @@ On the day, before typing:
 - Open Claude Code **in the repo folder**, not a parent. Run `pwd` and check. An agent writes wherever it is.
 - Start from your cohort's branch, never `main`: `git fetch`, then `git checkout team/<cohort>`. The facilitator tells you the cohort name.
 - `/clear` at the start of every section. A prompt typed into the wrong agent produces confident nonsense.
+- Always type the agent command, never the prompt command. `/hve-core:dt-coach`, `/hve-core:security-planner`, `/hve-core:rai-planner-agent`, `/hve-core:rpi-agent`. The prompt commands such as `security-plan-from-prd`, `rai-capture` and `rpi` fail with "needs the role loaded first". Known defect in the Claude Code conversion.
 - Open `.copilot-tracking/` in your file explorer. Watch files appear. That folder is what gets reviewed, not your chat.
 
 ---pagebreak---
